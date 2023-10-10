@@ -22,10 +22,12 @@ function App() {
     <>
       {useEffect(() => {
         setTimeout(() => setGreetingOne(true) , 1000);
-        setTimeout(() => setGreetingTwo(true) , 3000);
+        setTimeout(() => {
+          setGreetingTwo(true)
+          setGreetingOne(false) 
+        }, 3000);
         setTimeout(() => {
           setContent(true)
-          setGreetingOne(false)
           setGreetingTwo(false) 
         }, 7000);
       }, [])}
