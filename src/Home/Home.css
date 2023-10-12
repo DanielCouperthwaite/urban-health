@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    background-color: pink;
+  }
+
+h1 {
+    color: blueviolet;
+}
+
+p {
+    color: blueviolet;
+}
+
+button {
+    color: aqua;
+    size: 1em;
+}
