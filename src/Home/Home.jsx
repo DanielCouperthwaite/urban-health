@@ -4,6 +4,12 @@ import './Home.css'
 
 export default function Home () {
 
+    const projects = [
+        "project1",
+        "project2",
+        "project3"
+    ]
+
     return (
         <>
             <div>
@@ -26,33 +32,26 @@ export default function Home () {
                         </Link>
                     </div>
 
-                    <div >
+                    
 
                         <div className='projects' >
                             <h2>Projects:</h2>
-
-                            <Link  to="/project">
-                                <button className='project-button'>
-                                    <h2>Project</h2>
-                                </button>
-                            </Link>
-                            <Link to="/project">
-                                <button className='project-button'>
-                                    <h2>Project</h2>
-                                </button> 
-                            </Link>
+                                {projects.map((project) => {
+                                                        return (
+                                                            <>
+                                                                <Link  to={`/project/${project}`} >
+                                                                    <button className='project-button'>
+                                                                        <h2>{project}</h2>
+                                                                    </button>
+                                                                </Link>
+                                                            </>
+                                                        )
+                                                    })}
+                            
+                            
 
                         </div>
 
-                        
-                            
-
-                            
-
-                            
-                        
-                    
-                    </div>
                 </div>
                 
             </div>
