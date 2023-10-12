@@ -6,23 +6,56 @@ export default function Home () {
 
     return (
         <>
-            <body>
+            <div>
                    
                 <div>
                     <div>
-                        <Link className="link" to="/about"><button>About</button>   </Link>
+                        <Link to="/about">
+                            <button>
+                                <h2>Daniel Couperthwaite</h2>
+                                <p>About...</p>
+                            </button>   
+                        </Link>
                     </div>
 
                     <div>
-                        <Link className="link" to="/tech"><button>Tech Skills</button>   </Link>
+                        <Link to="/tech">
+                            <button>
+                                <h2>Tech Skills</h2>
+                            </button>   
+                        </Link>
                     </div>
 
-                    <div>
-                        <Link className="link" to="/project"><button>Project</button>   </Link>
+                    <div >
+
+                        <div className='projects' >
+                            <h2>Projects:</h2>
+
+                            <Link  to="/project">
+                                <button className='project-button'>
+                                    <h2>Project</h2>
+                                </button>
+                            </Link>
+                            <Link to="/project">
+                                <button className='project-button'>
+                                    <h2>Project</h2>
+                                </button> 
+                            </Link>
+
+                        </div>
+
+                        
+                            
+
+                            
+
+                            
+                        
+                    
                     </div>
                 </div>
                 
-            </body>
+            </div>
         </>
     )
 }

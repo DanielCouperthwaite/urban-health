@@ -7,6 +7,7 @@ export default function About () {
         <>
 
             <p>About goes here</p>
+            
         
         </>
     )

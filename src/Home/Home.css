@@ -9,11 +9,35 @@ h1 {
     color: blueviolet;
 }
 
+h2 {
+    font-size: 30px;
+}
+
 p {
     color: blueviolet;
+    font-size: 20px;
 }
 
 button {
     color: aqua;
     size: 1em;
+    width: 4em;
+    margin: 5px;
 }
+
+.projects {
+    border-radius: 8px;
+    margin: 5px;
+    padding: 0.3em 0.3em;
+    background-color: #1a1a1a;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    /* width: 4.7em;
+    size: 1em; */
+  }
+
+.project-button {
+    width: 3.5em;
+}
+
