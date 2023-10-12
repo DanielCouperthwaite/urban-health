@@ -2,13 +2,9 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
 
-export default function Home () {
+export default function Home ({projects}) {
 
-    const projects = [
-        "project1",
-        "project2",
-        "project3"
-    ]
+    console.log(projects)
 
     return (
         <>
@@ -39,17 +35,15 @@ export default function Home () {
                                 {projects.map((project) => {
                                                         return (
                                                             <>
-                                                                <Link  to={`/project/${project}`} >
+                                                                <Link  to={`/project/${project.name}`} projects={projects}>
                                                                     <button className='project-button'>
-                                                                        <h2>{project}</h2>
+                                                                        <h2>{project.name}</h2>
                                                                     </button>
                                                                 </Link>
                                                             </>
                                                         )
                                                     })}
                             
-                            
-
                         </div>
 
                 </div>

@@ -9,6 +9,11 @@ import Tech from "./Home/Tech/Tech";
 
 function App() {
 
+    const projectsArray = [
+      {name: "project1", descr1: "What a nice project"},
+      {name: "project2", descr1: "Even better project"},
+      {name: "project3", descr1: "Not bad"},
+  ]
 
   return (
     <>
@@ -17,10 +22,10 @@ function App() {
     
         <Routes>
           <Route path="/" element={<Hello />} />
-          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Home projects={projectsArray}/>} />
           <Route path="/about" element={<About />} />
           <Route path="/tech" element={<Tech />} />
-          <Route path="/project/:project" element={<Project />} />
+          <Route path="/project/:chosenProject" element={<Project projects={projectsArray}/>} />
           
         </Routes>
         

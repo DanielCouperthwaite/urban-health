@@ -2,14 +2,21 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import './Project.css'
 
-export default function Project () {
+export default function Project ({projects}) {
 
-    const {project}  = useParams()
+    const {chosenProject}  = useParams()
+    const currentProject = projects.filter((project) => project.name === chosenProject)
+
+    console.log(projects)
+    console.log(currentProject)
 
     return (
         <>
 
-            <p>{project} goes here</p>
+            <p>{chosenProject} goes here</p>
+            <p>{currentProject[0].name}</p>
+            <p>{currentProject[0].descr1}</p>
+
         
         </>
     )
