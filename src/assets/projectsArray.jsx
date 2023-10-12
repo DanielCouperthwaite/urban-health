@@ -75,6 +75,20 @@ export const projectsArray = [
         link4Descr: "https://nc-news-qkml.onrender.com/api/articles/2112",
         github: "https://github.com/DanielCouperthwaite/NC-News-Backend-Project",
     },
+    {
+        name: "WeatherOrNot", 
+        descr1: "Planning on Kayaking through Borneo? Horse-riding through Outer Mongolia? Fishing in the Amazon? Or maybe just taking the dog out and wondering if that umbrella is really necessary. Find the weather, anywhere in the world, instantly!",
+        descr2: "Fetching from a third party Api, WeatherOrNot handles your search queries, fetches data, extracts the most relevant parts and converts it into a useable format. All before that first raindrop even falls!",
+        descr3Bold: "Environment Variables. ",
+        descr3: "Keep your those precious API keys safe with environment variables stored locally or on your host site, but never pushed to a public repository.",
+        descr4Bold: "Never be caught out again.",
+        descr4: "Updated constantly to ensure all information is relevant, helpful and correct.",
+        descr5Bold: "Explore. Dream. Discover.",
+        descr5: "How is it in San Jose, Costa Rica, right now? Buenos Aires? Cairo? There's nothing wrong with a little daydreaming over that next trip...",
+        link: "https://weatherornot4114.netlify.app/",
+        linkDescr: "Try it for yourself!",
+        github: "https://github.com/DanielCouperthwaite/WeatherOrNot",
+    },
 ]
 
 
