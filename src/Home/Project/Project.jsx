@@ -24,21 +24,22 @@ export default function Project ({projects}) {
     console.log(projects)
     console.log(currentProject)
 
-    const {name, descr1, descr2, descr3Bold, descr3, descr4Bold, descr4, descr5Bold, descr5, link, linkDescr, github, link2, link2Descr, link3, link3Descr, link4, link4Descr} = currentProject[0]
+    const {name, descr1, descr11, descr2, descr3Bold, descr3, descr4Bold, descr4, descr5Bold, descr5, link, linkDescr, github, link2, link2Descr, link3, link3Descr, link4, link4Descr} = currentProject[0]
 
     return (
         <>
             <h2>{name}</h2>
             <p>{descr1}</p>
+            <p>{descr11}</p>
             <p>{descr2}</p>
-            <a href={github} target="blank">Find the repository on </a>
+            {github === "" ? null : <a href={github} target="blank">Find the repository on </a>}
             <a href={link} target="blank">{linkDescr} </a>
             {link2 === "" ? null : <a href={link2} target="blank">{link2Descr} </a>}
             {link3 === "" ? null : <a href={link3} target="blank">{link3Descr} </a>}
             {link4 === "" ? null : <a href={link4} target="blank">{link4Descr} </a>}
-            <p><strong>{descr3Bold}</strong>{" " +descr3}</p>
-            <p><strong>{descr4Bold}</strong>{" " +descr4}</p>
-            <p><strong>{descr5Bold}</strong>{" " +descr5}</p>
+            {descr3 === "" ? null : <p><strong>{descr3Bold}</strong>{" " +descr3}</p>}
+            {descr4 === "" ? null : <p><strong>{descr4Bold}</strong>{" " +descr4}</p>}
+            {descr5 === "" ? null : <p><strong>{descr5Bold}</strong>{" " +descr5}</p>}
             <a href={link4} target="blank">{link4Descr} </a>
 
         
