@@ -10,11 +10,6 @@ import {projectsArray} from "./assets/projectsArray";
 
 function App() {
 
-  //   const projectsArray = [
-  //     {name: "project1", descr1: "What a nice project"},
-  //     {name: "project2", descr1: "Even better project"},
-  //     {name: "project3", descr1: "Not bad"},
-  // ]
 
   return (
     <>

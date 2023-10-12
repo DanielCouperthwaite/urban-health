@@ -1,6 +1,7 @@
 export const projectsArray = [
     {
         name: "Number Blast", 
+        lang: "Javascript, React",
         descr1: "Welcome to number Blast, a reaction based number game designed to test your speed against the clock!",
         descr2: "Built in Javascript with React, Firebase and tsParticles, Number Blast offers a fun and frantic gaming experience to challenge you and your freinds! How fast are you under pressure?",
         descr3Bold: "States of Play.",
@@ -15,6 +16,7 @@ export const projectsArray = [
     },
     {
         name: "The Guitar Shop", 
+        lang: "",
         descr1: "Welcome to The Guitar Shop, a simple website to highlight stock details available from different locations.",
         descr2: "Built in C# with ASP .NET and Bootstrap CSS, The Guitar Shop offers a frontend source of information for guitar availability, locations and descriptions.",
         descr3Bold: "Built for Scalability. ",
@@ -29,6 +31,7 @@ export const projectsArray = [
     },
     {
         name: "Love Birds", 
+        lang: "",
         descr1: "Built as final project of the Northcoders Bootcamp, Love Birds is a fun and interactive application designed to keep the spark in long distance relationships.",
         descr2: "Built in Typescript with Firebase, React Native and Tailwind CSS, Love Birds allows users to send images, videos and more to their loved ones. Upon receiving their message, users must answer a quiz question or play a game to 'hatch their egg' and receive their prize.",
         descr3Bold: "Built for complexity. ",
@@ -43,6 +46,7 @@ export const projectsArray = [
     },
     {
         name: "Just News", 
+        lang: "",
         descr1: "What is worse than sifting through ad after ad in search of the headlines? Eurgh! There has to be a better way! How about a site for those wanting articles in a simple format? Just News provides Just that, Just when you need it, Just about!",
         descr2: "Built in Javascript with React, Vite and CSS, Just News requests information from the NC_News Api (see below) and renders articles by topic... Or in a great big list if that's more your thing. We don't judge here.",
         descr3Bold: "Responsive and dynamic.",
@@ -57,6 +61,7 @@ export const projectsArray = [
     },
     {
         name: "Just News API", 
+        lang: "",
         descr1: "As pretty as they might be, some of the best sites in the world would be nowhere without a functioning server and database.",
         descr2: "Built with a PostgreSQL, Express JS and Node JS, this api serves the articles used in my Just News site (see above.) You can try it yourself with the buttons below. There is a list of all the available endpoints, or a couple of example requests already written out:",
         descr3Bold: "Tried and Tested.",
@@ -77,6 +82,7 @@ export const projectsArray = [
     },
     {
         name: "WeatherOrNot", 
+        lang: "",
         descr1: "Planning on Kayaking through Borneo? Horse-riding through Outer Mongolia? Fishing in the Amazon? Or maybe just taking the dog out and wondering if that umbrella is really necessary.", 
         descr11: "Find the weather, anywhere in the world, instantly!",
         descr2: "Fetching from a third party Api, WeatherOrNot handles your search queries, fetches data, extracts the most relevant parts and converts it into a useable format. All before that first raindrop even falls!",
@@ -92,6 +98,7 @@ export const projectsArray = [
     },
     {
         name: "Functions Playground", 
+        lang: "",
         descr1: "Wow, with all this coding, I wish there was a place we could relax and put the Fun back into Functions!", 
         descr11: "Here it is, a page of simple functions displayed in React for everybody to enjoy. Be sure to check back for updates!",
         descr2: "Built in React, Functions playground imports util functions in from their own files, accepts user input and responds with appropriate feedback from the functions themselves. (Plus a little extra error handling for even more fun!)",
@@ -107,6 +114,7 @@ export const projectsArray = [
     },
     {
         name: "Bonus: Homemade Naan Breads", 
+        lang: "",
         descr1: "Nothing at all to do with development I'm afraid, but who doesn't like a little baking between debugging!",
         descr2: "Here are a few I made earlier with strong white flour, all natural yoghurt and just a little golden caster sugar. Carefully kneaded, rolled and dry fried for a soft, elastic consistency.",
         descr3Bold: "Fresh and Delicious. ",

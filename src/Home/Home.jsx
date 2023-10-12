@@ -38,6 +38,7 @@ export default function Home ({projects}) {
                                                                 <Link  to={`/project/${project.name}`} projects={projects}>
                                                                     <button className='project-button'>
                                                                         <h2>{project.name}</h2>
+                                                                        <p>{project.lang}</p>
                                                                     </button>
                                                                 </Link>
                                                             </>
