@@ -43,6 +43,6 @@ button {
 
 .homeImage {
     width: 210px;
-    height: 370px
+    height: auto;
 }
 

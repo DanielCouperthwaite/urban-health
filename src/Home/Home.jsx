@@ -39,7 +39,7 @@ export default function Home ({projects}) {
                                                                     <button className='project-button'>
                                                                         <h2>{project.name}</h2>
                                                                         <p>{project.lang}</p>
-                                                                        <img className="homeImage" src={project.images} />
+                                                                        <img className="homeImage" src={project.images[0]} />
                                                                     </button>
                                                                 </Link>
                                                             </>

@@ -22,6 +22,7 @@ import gs3 from "./gs3.png"
 import gs4 from "./gs4.png"
 
 import naan1 from "./naan1.png"
+import naan2 from "./naan2.png"
 
 import lb1 from "./lb1.png"
 import lb3 from "./lb3.png"
