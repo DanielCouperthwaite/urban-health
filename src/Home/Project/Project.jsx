@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import Carousel from "nuka-carousel"
 
 import { useParams, Link } from 'react-router-dom'
 import './Project.css'
@@ -12,7 +13,7 @@ export default function Project ({projects}) {
     console.log(projects)
     console.log(currentProject)
 
-    const {name, descr1, descr11, descr2, descr3Bold, descr3, descr4Bold, descr4, descr5Bold, descr5, link, linkDescr, github, link2, link2Descr, link3, link3Descr, link4, link4Descr} = currentProject[0]
+    const {name, descr1, descr11, descr2, descr3Bold, descr3, descr4Bold, descr4, descr5Bold, descr5, link, linkDescr, github, link2, link2Descr, link3, link3Descr, link4, link4Descr, images} = currentProject[0]
 
     return (
         <>
@@ -29,6 +30,13 @@ export default function Project ({projects}) {
             {descr4 === "" ? null : <p><strong>{descr4Bold}</strong>{" " +descr4}</p>}
             {descr5 === "" ? null : <p><strong>{descr5Bold}</strong>{" " +descr5}</p>}
             <a href={link4} target="blank">{link4Descr} </a>
+
+            <Carousel wrapAround="true" autoplay="true" speed={500} autoplayInterval={8000}>
+
+                {images.map(image => <img src={image} />)}
+
+                
+            </Carousel>
 
                 <div>
                         <Link to="/home">
