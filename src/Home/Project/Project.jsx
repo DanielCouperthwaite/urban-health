@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
-import Carousel from "nuka-carousel"
+import Carousel, { NextButton } from "nuka-carousel"
 
 import { useParams, Link } from 'react-router-dom'
 import './Project.css'
 
 
 export default function Project ({projects}) {
+
 
     const {chosenProject}  = useParams()
     const currentProject = projects.filter((project) => project.name === chosenProject)
@@ -29,14 +30,27 @@ export default function Project ({projects}) {
             {descr3 === "" ? null : <p><strong>{descr3Bold}</strong>{" " +descr3}</p>}
             {descr4 === "" ? null : <p><strong>{descr4Bold}</strong>{" " +descr4}</p>}
             {descr5 === "" ? null : <p><strong>{descr5Bold}</strong>{" " +descr5}</p>}
-            {/* <a href={link4} target="blank">{link4Descr} </a> */}
 
-            <Carousel wrapAround="true" autoplay="true" speed={500} autoplayInterval={8000}>
-
-                {images.map(image => <img src={image} alt={`Screenshot of ${name} project`}/>)}
-
-                
-            </Carousel>
+            <div className='image-holder'>
+                <Carousel 
+                    adaptiveHeight='true'
+                    cellAlign='center' 
+                    wrapAround="true" 
+                    autoplay="true" 
+                    speed={500} 
+                    autoplayInterval={8000}
+                    renderCenterLeftControls={({ previousSlide }) => (
+                        <button className='slide-buttons' onClick={previousSlide}>{"<"}</button>
+                      )}
+                    renderCenterRightControls={({ nextSlide }) => (
+                        <button className='slide-buttons' onClick={nextSlide}>{">"}</button>
+                      )}
+                    
+                >
+                  {images.map(image => <img className='screenshot' src={image} alt={`Screenshot of ${name} project`}/>)}
+                </Carousel>
+            </div>
+            
 
                 <div>
                         <Link to="/home">

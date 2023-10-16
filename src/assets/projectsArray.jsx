@@ -128,8 +128,8 @@ export const projectsArray = [
         link2Descr: "/api/articles",
         link3: "https://nc-news-qkml.onrender.com/api/articles/6/comments",
         link3Descr: "/api/articles/6/comments",
-        link4: "/api/articles/2112",
-        link4Descr: "https://nc-news-qkml.onrender.com/api/articles/2112",
+        link4Descr: "/api/articles/2112",
+        link4: "https://nc-news-qkml.onrender.com/api/articles/2112",
         github: "https://github.com/DanielCouperthwaite/NC-News-Backend-Project",
     },
     {

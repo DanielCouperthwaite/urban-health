@@ -1,0 +1,35 @@
+.image-holder {
+    max-width: 100%;
+    height: auto;
+}
+
+.screenshot {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.slider-control-bottomcenter button{
+    background: rgb(84, 110, 239) !important;
+    border-radius: 50%; 
+    width: 14px;  
+    height: 14px; 
+    margin-top: 260px;
+  }
+  
+.slider-control-bottomcenter svg{
+    display: none; 
+   }
+   
+.slider-control-bottomcenter li{
+    margin-right: 5px;
+   }
+
+.slide-buttons {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: auto;
+    height: auto;
+}
