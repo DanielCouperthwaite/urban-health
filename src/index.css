@@ -44,14 +44,16 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: aqua;
+  size: 1em;
+  width: 4em;
   /* width: 4.7em; */
-  width: 100%;
 }
 button:hover {
   border-color: #646cff;
 }
-button:focus,
+/* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 

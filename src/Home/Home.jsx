@@ -13,7 +13,7 @@ export default function Home ({projects}) {
                 <div>
                     <div>
                         <Link to="/about">
-                            <button>
+                            <button className='home-button'>
                                 <h2>Daniel Couperthwaite</h2>
                                 <p>About...</p>
                             </button>   
@@ -22,7 +22,7 @@ export default function Home ({projects}) {
 
                     <div>
                         <Link to="/tech">
-                            <button>
+                            <button className='home-button'>
                                 <h2>Tech Skills</h2>
                             </button>   
                         </Link>
