@@ -27,14 +27,15 @@ button {
 
 .projects {
     border-radius: 8px;
-    margin: 5px;
-    padding: 0.3em 0.3em;
+    margin: 5px; 
+    /* padding: 0.3em 0.3em;  */
     background-color: #1a1a1a;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
     /* width: 4.7em;
     size: 1em; */
+    width: 100%;
   }
 
 .project-button {
