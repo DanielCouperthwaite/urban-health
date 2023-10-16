@@ -22,18 +22,18 @@ export default function Project ({projects}) {
             <p>{descr11}</p>
             <p>{descr2}</p>
             {github === "" ? null : <a href={github} target="blank"><button>Find the repository on </button></a>}
-            <a href={link} target="blank"><button>{linkDescr}</button> </a>
+            {link === "" ? null : <a href={link} target="blank"><button>{linkDescr}</button> </a>}
             {link2 === "" ? null : <a href={link2} target="blank"><button>{link2Descr}</button> </a>}
             {link3 === "" ? null : <a href={link3} target="blank"><button>{link3Descr}</button> </a>}
             {link4 === "" ? null : <a href={link4} target="blank"><button>{link4Descr}</button> </a>}
             {descr3 === "" ? null : <p><strong>{descr3Bold}</strong>{" " +descr3}</p>}
             {descr4 === "" ? null : <p><strong>{descr4Bold}</strong>{" " +descr4}</p>}
             {descr5 === "" ? null : <p><strong>{descr5Bold}</strong>{" " +descr5}</p>}
-            <a href={link4} target="blank">{link4Descr} </a>
+            {/* <a href={link4} target="blank">{link4Descr} </a> */}
 
             <Carousel wrapAround="true" autoplay="true" speed={500} autoplayInterval={8000}>
 
-                {images.map(image => <img src={image} />)}
+                {images.map(image => <img src={image} alt={`Screenshot of ${name} project`}/>)}
 
                 
             </Carousel>
