@@ -4,6 +4,8 @@ import Carousel, { NextButton } from "nuka-carousel"
 import { useParams, Link } from 'react-router-dom'
 import './Project.css'
 
+import gh from "../../assets/gh.png"
+import linkedin from "../../assets/linkedin.png"
 
 export default function Project ({projects}) {
 
@@ -21,15 +23,6 @@ export default function Project ({projects}) {
             <h2>{name}</h2>
             <p>{descr1}</p>
             <p>{descr11}</p>
-            <p>{descr2}</p>
-            {github === "" ? null : <a href={github} target="blank"><button>Find the repository on </button></a>}
-            {link === "" ? null : <a href={link} target="blank"><button>{linkDescr}</button> </a>}
-            {link2 === "" ? null : <a href={link2} target="blank"><button>{link2Descr}</button> </a>}
-            {link3 === "" ? null : <a href={link3} target="blank"><button>{link3Descr}</button> </a>}
-            {link4 === "" ? null : <a href={link4} target="blank"><button>{link4Descr}</button> </a>}
-            {descr3 === "" ? null : <p><strong>{descr3Bold}</strong>{" " +descr3}</p>}
-            {descr4 === "" ? null : <p><strong>{descr4Bold}</strong>{" " +descr4}</p>}
-            {descr5 === "" ? null : <p><strong>{descr5Bold}</strong>{" " +descr5}</p>}
 
             <div className='image-holder'>
                 <Carousel 
@@ -50,6 +43,20 @@ export default function Project ({projects}) {
                   {images.map(image => <img className='screenshot' src={image} alt={`Screenshot of ${name} project`}/>)}
                 </Carousel>
             </div>
+
+            <p>{descr2}</p>
+            <div>
+                {github === "" ? null : <a href={github} target="blank"><button className='project-links'>Find the repository on <img src={gh} style={{height: "18px"}}/></button></a>}
+            </div>
+            <div>
+                {link === "" ? null : <a href={link} target="blank" ><button className='project-links'>{linkDescr}</button> </a>}
+            </div> 
+            {link2 === "" ? null : <a href={link2} target="blank"><button className='project-links'>{link2Descr}</button> </a>}
+            {link3 === "" ? null : <a href={link3} target="blank"><button className='project-links'>{link3Descr}</button> </a>}
+            {link4 === "" ? null : <a href={link4} target="blank"><button className='project-links'>{link4Descr}</button> </a>}
+            {descr3 === "" ? null : <p><strong>{descr3Bold}</strong>{" " +descr3}</p>}
+            {descr4 === "" ? null : <p><strong>{descr4Bold}</strong>{" " +descr4}</p>}
+            {descr5 === "" ? null : <p><strong>{descr5Bold}</strong>{" " +descr5}</p>}
             
 
                 <div>
