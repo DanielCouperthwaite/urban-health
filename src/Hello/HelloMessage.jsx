@@ -30,11 +30,9 @@ export default function HelloMessage () {
         
         <div>
         <Box>
-            <Grow in={greetingOne}><p style={{color: "white", margin: "auto", setTimeout: 2000}}>Hello</p></Grow>
-            {/* {greetingOne === false ? null : <p style={{color: "white", margin: "auto"}}>Hello...</p>} */}
+            <Grow in={greetingOne}><h3 style={{color: "white", margin: "auto", setTimeout: 2000}}>Hello</h3></Grow>
         </Box><Box>
-            <Grow in={greetingTwo}><p style={{color: "white", margin: "auto"}}>Welcome to Me</p></Grow>
-            {/* {greetingTwo === false ? null: <p style={{color: "white"}}>Welcome to Me!</p>} */}
+            <Grow in={greetingTwo}><h3 style={{color: "white", margin: "auto"}}>Welcome to Me</h3></Grow>
         </Box>
         </div>
         </>
