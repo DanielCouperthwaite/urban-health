@@ -6,7 +6,7 @@ import Particles from "react-particles";
 
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
-import { Box, Fade } from '@mui/material';
+import { Box, Fade, Grow } from '@mui/material';
 
 export default function ParticleEffect () {
 
@@ -23,7 +23,7 @@ export default function ParticleEffect () {
     const [particles, setParticles] = useState(true)
 
     useEffect(() => {
-      setTimeout(() => setParticles(false), 5500);
+      setTimeout(() => setParticles(false), 6500);
       
 
   }, [])

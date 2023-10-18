@@ -13,13 +13,13 @@ export default function HelloMessage () {
                 setTimeout(() => setGreetingOne(true) , 1000);
                 setTimeout(() => {
                     setGreetingOne(false) 
-                }, 2500);
-                setTimeout(() => {
-                    setGreetingTwo(true) 
                 }, 3000);
                 setTimeout(() => {
+                    setGreetingTwo(true) 
+                }, 4000);
+                setTimeout(() => {
                     setGreetingTwo(false) 
-                }, 4500);
+                }, 5500);
 
             }, [])
 
