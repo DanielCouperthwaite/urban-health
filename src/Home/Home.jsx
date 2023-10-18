@@ -1,13 +1,15 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
+import ParticleEffectHome from './ParticleEffectHome'
 
 export default function Home ({projects}) {
 
-    
+
 
     return (
         <>
+            <ParticleEffectHome />
             <div>
                    
                 <div>
