@@ -6,9 +6,15 @@ import { Box, Fade, Grow, Slide } from '@mui/material'
 
 export default function Home ({projects}) {
 
-    const [aboutLoad, setAbout] = useState(true)
-    const [techLoad, setTech] = useState(true)
-    const [projectLoad, setProjectLoad] = useState(true)
+    const [aboutLoad, setAboutLoad] = useState(false)
+    const [techLoad, setTechLoad] = useState(false)
+    const [projectLoad, setProjectLoad] = useState(false)
+
+    useEffect(() => {
+        setTimeout(() => setAboutLoad(true) , 500);
+        setTimeout(() => setTechLoad(true) , 1500);
+        setTimeout(() => setProjectLoad(true), 3000);
+    }, [])
 
     return (
         <>
