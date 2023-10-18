@@ -12,16 +12,15 @@ export default function Home ({projects}) {
     const [particleLoad, setParticleLoad] = useState(false)
 
     useEffect(() => {
-        setTimeout(() => setParticleLoad(true) , 500);
-        setTimeout(() => setAboutLoad(true) , 1000);
-        setTimeout(() => setTechLoad(true) , 2000);
-        setTimeout(() => setProjectLoad(true), 3000);
+        setTimeout(() => setAboutLoad(true) , 500);
+        setTimeout(() => setTechLoad(true) , 1000);
+        setTimeout(() => setProjectLoad(true), 1500);
     }, [])
 
     return (
         <>
-            <ParticleEffectHome />
-            
+
+            <ParticleEffectHome />  
 
             
             <div>
