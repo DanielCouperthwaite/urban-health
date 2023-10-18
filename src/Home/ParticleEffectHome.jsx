@@ -88,7 +88,7 @@ export default function ParticleEffectHome () {
                                         type: "circle"
                                     },
                                     size: {
-                                        value: { min: 40, max: 40 },
+                                        value: { min: 500, max: 500 },
                                     },
                                 },
                                 detectRetina: true,

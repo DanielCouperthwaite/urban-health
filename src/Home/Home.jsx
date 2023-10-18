@@ -9,10 +9,12 @@ export default function Home ({projects}) {
     const [aboutLoad, setAboutLoad] = useState(false)
     const [techLoad, setTechLoad] = useState(false)
     const [projectLoad, setProjectLoad] = useState(false)
+    const [particleLoad, setParticleLoad] = useState(false)
 
     useEffect(() => {
-        setTimeout(() => setAboutLoad(true) , 500);
-        setTimeout(() => setTechLoad(true) , 1500);
+        setTimeout(() => setParticleLoad(true) , 500);
+        setTimeout(() => setAboutLoad(true) , 1000);
+        setTimeout(() => setTechLoad(true) , 2000);
         setTimeout(() => setProjectLoad(true), 3000);
     }, [])
 
