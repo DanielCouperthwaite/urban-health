@@ -8,11 +8,11 @@ export default function Hello () {
 
     const navigate = useNavigate();
     
-
+    {useEffect(() => {
             setTimeout(() => {
                 navigate('/home')
             }, 6000);
-
+        }, [])}
 
     return (
         <>
