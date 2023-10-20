@@ -62,7 +62,7 @@ export default function Project ({projects}) {
 
                 <div>
                         <Link to="/home">
-                            <button>
+                            <button className='back-button'>
                                 <p>Back</p>
                             </button>   
                         </Link>

@@ -1,5 +1,5 @@
 .image-holder {
-    max-width: 100%;
+    width: 70%;
     height: auto;
     margin: auto;
 }
@@ -10,6 +10,7 @@
     font-size: 20px;
     width: 100%;
     padding: 20px;
+    max-width: 600px;
 
 }
 
@@ -35,6 +36,23 @@
 .slider-control-bottomcenter li{
     margin-right: 5px;
    }
+
+ .back-button {
+    border-radius: 8px;
+    /* padding: 0.3em 0.3em; */
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #fd02e8;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    color: black(212, 255, 0);
+    size: 1em;
+    width: 100%;
+    max-width: 200px;
+    opacity: 1;
+    /* width: 4.7em; */
+  }
 
 .slide-buttons {
     background-color: transparent;
