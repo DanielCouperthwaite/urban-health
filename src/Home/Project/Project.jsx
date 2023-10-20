@@ -62,7 +62,7 @@ export default function Project ({projects}) {
 
                 <div>
                         <Link to="/home">
-                            <button className='back-button'>
+                            <button style={{maxWidth: "200px"}}>
                                 <p>Back</p>
                             </button>   
                         </Link>
