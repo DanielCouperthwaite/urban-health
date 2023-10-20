@@ -4,10 +4,6 @@ body {
     place-items: center;
   }
 
-h1 {
-    color: blueviolet;
-}
-
 h2 {
     font-size: 30px;
 }
@@ -15,17 +11,20 @@ h2 {
 p {
     color: white;
     font-size: 20px;
+    opacity: 0.9;
 }
 
 .home-button {
-    color: aqua;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
     size: 1em;
     width: 4em;
     margin: 5px;
     width: 100%;
 }
 
-.projects {
+.projects-home1 {
+    /* opacity: 0.8 !important;
     border-radius: 8px;
     margin: 5px; 
     padding-top: 0.3em;
@@ -34,9 +33,7 @@ p {
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    /* width: 4.7em;
-    size: 1em; */
-    width: 100%;
+    width: 100%; */
   }
 
 .project-button {

@@ -1,13 +1,14 @@
 .image-holder {
     max-width: 100%;
     height: auto;
+    margin: auto;
 }
 
 .project-links {
     background-color: aliceblue;
     color: black;
     font-size: 20px;
-    width: 500px;
+    width: 100%;
     padding: 20px;
 
 }
@@ -20,7 +21,7 @@
 }
 
 .slider-control-bottomcenter button{
-    background: rgb(84, 110, 239) !important;
+    background: rgb(255, 255, 255) !important;
     border-radius: 50%; 
     width: 14px;  
     height: 14px; 
@@ -41,4 +42,5 @@
     padding: 0;
     width: auto;
     height: auto;
+    color:aqua;
 }

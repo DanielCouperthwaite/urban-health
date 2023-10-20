@@ -19,8 +19,9 @@ export default function Home ({projects}) {
 
     return (
         <>
-
+          
             <ParticleEffectHome />  
+
 
             
             <div>
@@ -31,7 +32,8 @@ export default function Home ({projects}) {
                             <div>
                                 <Link to="/about">
                                     <button className='home-button'>
-                                        <h2>Daniel Couperthwaite</h2>
+                                        <h1>Daniel Couperthwaite</h1>
+                                        <p>Full Stack Developer</p>
                                         <p>About...</p>
                                     </button>   
                                 </Link>
@@ -53,7 +55,9 @@ export default function Home ({projects}) {
                     
                     <Box>
                         <Grow in={projectLoad}>
-                        <div className='projects' >
+                        <div 
+                        className='projects-home1'
+                        >
                             <h2>Projects:</h2>
                                 {projects.map((project) => {
                                                         return (

@@ -20,6 +20,7 @@ export default function Project ({projects}) {
 
     return (
         <>
+
             <h2>{name}</h2>
             <p>{descr1}</p>
             <p>{descr11}</p>
@@ -66,6 +67,7 @@ export default function Project ({projects}) {
                             </button>   
                         </Link>
                     </div>
+
         
         </>
     )
