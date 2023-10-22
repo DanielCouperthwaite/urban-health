@@ -12,6 +12,9 @@ export default function Home ({projects}) {
     const [particleLoad, setParticleLoad] = useState(false)
 
     useEffect(() => {
+
+        window.scrollTo(0, 0)
+
         setTimeout(() => setAboutLoad(true) , 500);
         setTimeout(() => setTechLoad(true) , 1000);
         setTimeout(() => setProjectLoad(true), 1500);
