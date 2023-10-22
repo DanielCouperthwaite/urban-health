@@ -9,6 +9,10 @@ import linkedin from "../../assets/linkedin.png"
 
 export default function Project ({projects}) {
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
 
     const {chosenProject}  = useParams()
     const currentProject = projects.filter((project) => project.name === chosenProject)
