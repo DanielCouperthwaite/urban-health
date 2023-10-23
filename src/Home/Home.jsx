@@ -5,6 +5,8 @@ import ParticleEffectHome from './ParticleEffectHome'
 import { Box, Fade, Grow, Slide } from '@mui/material'
 
 import face from "../assets/face.png"
+import li from "../assets/linkedin.png"
+import gh from "../assets/gh.png"
 
 export default function Home ({projects}) {
 
@@ -35,11 +37,26 @@ export default function Home ({projects}) {
                         <Grow in={aboutLoad}>
                 
                             <div>
-                                <button className='home-button'>
-                                        <h1>Daniel Couperthwaite</h1>
-                                        <p>Full Stack Developer</p>
-                                        <p>About...</p>
-                                    </button> 
+                                <div className='home-info'>
+                                       <div>
+                                            <h1>Daniel Couperthwaite</h1>
+                                            <p>Full Stack Developer</p>
+                                       </div>
+                                       <div>
+                                            <a href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
+                                                <button className="project-links">
+                                                    <img src={li}></img>
+                                                </button>
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
+                                                <button className="project-links">
+                                                    <img src={gh}></img>
+                                                </button>
+                                            </a>
+                                       </div>
+                                        
+                                    
+                                </div> 
                             </div>
                         </Grow>
                     </Box>

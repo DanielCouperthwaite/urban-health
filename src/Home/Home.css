@@ -14,11 +14,20 @@ p {
     opacity: 0.9;
 }
 
+.home-info {
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    size: 1em;
+    width: 100%;
+    border: solid white;
+    display: flex;
+}
+
 .home-button {
     color: rgb(255, 255, 255);
     opacity: 0.7;
     size: 1em;
-    margin: 5px;
+    /* margin: 5px; */
     width: 100%;
     border: solid white;
 }
