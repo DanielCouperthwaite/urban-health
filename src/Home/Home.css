@@ -18,9 +18,20 @@ p {
     color: rgb(255, 255, 255);
     opacity: 0.7;
     size: 1em;
-    width: 100;
     margin: 5px;
     width: 100%;
+    border: solid white;
+}
+
+.option-holder {
+    display: flex; 
+    width: 100%;
+}
+
+.options {
+    flex: 1;
+    width: 100%;
+    margin: 10px;
 }
 
 .projects-home1 {

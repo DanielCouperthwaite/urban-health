@@ -4,6 +4,8 @@ import './Home.css'
 import ParticleEffectHome from './ParticleEffectHome'
 import { Box, Fade, Grow, Slide } from '@mui/material'
 
+import face from "../assets/face.png"
+
 export default function Home ({projects}) {
 
     const [aboutLoad, setAboutLoad] = useState(false)
@@ -33,28 +35,48 @@ export default function Home ({projects}) {
                         <Grow in={aboutLoad}>
                 
                             <div>
-                                <Link to="/about">
-                                    <button className='home-button'>
+                                <button className='home-button'>
                                         <h1>Daniel Couperthwaite</h1>
                                         <p>Full Stack Developer</p>
                                         <p>About...</p>
-                                    </button>   
-                                </Link>
+                                    </button> 
                             </div>
                         </Grow>
                     </Box>
+                    
+                    
 
-                    <Box>
-                        <Grow in={techLoad}>
-                            <div>
-                                <Link to="/tech">
-                                    <button className='home-button'>
-                                        <h2>Tech Skills</h2>
-                                    </button>   
-                                </Link>
-                            </div>
-                        </Grow>
-                    </Box>
+                    <div className='option-holder'>
+                        <Box className="options">
+                            
+                                <Grow in={techLoad}>
+                                    
+                                        <Link to="/about">
+                                            <button className='home-button'>
+                                                <h2>About me</h2>
+                                            </button>   
+                                        </Link>
+                                   
+                                </Grow>
+                            
+                        </Box>
+                        
+                        <Box className="options">
+                            
+                                <Grow in={techLoad}>
+                                   
+                                        <Link to="/tech">
+                                            <button className='home-button'>
+                                                <h2>Tech Skills</h2>
+                                            </button>   
+                                        </Link>
+                                    
+                                </Grow>
+                            
+                                
+                        </Box>
+                    </div>
+                    
                     
                     <Box>
                         <Grow in={projectLoad}>
