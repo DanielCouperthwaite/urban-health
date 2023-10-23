@@ -35,7 +35,8 @@ h1 {
   line-height: 1.1;
   padding-left: auto;
   padding-right: auto;
-  opacity: 1 !important;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
 }
 
 button {
