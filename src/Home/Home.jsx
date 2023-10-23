@@ -40,9 +40,9 @@ export default function Home ({projects}) {
                                 <div className='home-info'>
                                        <div>
                                             <h1>Daniel Couperthwaite</h1>
-                                            <p>Full Stack Developer</p>
+                                            <p>Dreamer - Creater - Full Stack Developer</p>
                                        </div>
-                                       <div>
+                                       <div display="flex">
                                             <a href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
                                                 <button className="project-links">
                                                     <img src={li}></img>
@@ -97,10 +97,10 @@ export default function Home ({projects}) {
                     
                     <Box>
                         <Grow in={projectLoad}>
-                        <div 
-                        className='projects-home1'
+                        <div styles={{width: "100%"}}
+                        // className='projects-home1'
                         >
-                            <h2>Projects:</h2>
+                            {/* <h2>Projects:</h2> */}
                                 {projects.map((project) => {
                                                         return (
                                                             <>
