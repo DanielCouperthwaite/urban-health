@@ -42,7 +42,7 @@ export default function Home ({projects}) {
                                             <h1>Daniel Couperthwaite</h1>
                                             <p>Dreamer - Creater - Full Stack Developer</p>
                                        </div>
-                                       <div styles={{display: "block"}} >
+                                       <div styles={{position: "block"}} >
                                             <a  href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
                                                 <button className="social-link">
                                                     <img src={li}></img>
@@ -70,7 +70,7 @@ export default function Home ({projects}) {
                                     
                                         <Link to="/about">
                                             <button className='home-button'>
-                                                <h2>About me</h2>
+                                                <h2>About Me</h2>
                                             </button>   
                                         </Link>
                                    
