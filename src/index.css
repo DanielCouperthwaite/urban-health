@@ -32,17 +32,12 @@ body {
 
 h1 {
   font-size: 5vw;
-  line-height: 1.1;
-  /* padding: 5vw;
-  padding-top: 4vw;
-  margin: 1vw; */
+  line-height: 1.1; 
 }
 
 h2 {
   font-size: 25px;
 }
-
-
 
 
 button {
