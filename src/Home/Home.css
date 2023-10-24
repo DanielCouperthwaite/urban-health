@@ -18,12 +18,12 @@ p {
     color: rgb(255, 255, 255);
     width: 100%;
     /* border: solid white; */
-    display: flex;
+    display: relative;
 }
 
 .home-button {
     color: rgb(255, 255, 255);
-    opacity: 0.7;
+    opacity: 0.85;
     size: 1em;
     /* margin: 5px; */
     width: 100%;
@@ -33,6 +33,7 @@ p {
 .option-holder {
     display: flex; 
     width: 100%;
+
 }
 
 .options {
@@ -55,9 +56,15 @@ p {
   }
 
 .project-button {
-    width: 25%;
+    width: 100%;
     max-width: 350px;
-    min-width: 225px;
+    min-width: 300px;
+}
+
+.social-holder {
+    display: flex;
+    justify-content: flex-end;
+
 }
 
 .social-link {
@@ -67,8 +74,8 @@ p {
     width: 60%;
     padding: 7px;
     max-width: 60px;
-    min-width: 50px;
-    margin: 0;
+    min-width: 60px;
+    margin: 8px;
     border: solid white;
 }
 

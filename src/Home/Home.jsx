@@ -35,14 +35,11 @@ export default function Home ({projects}) {
                 <div>
                    <Box>
                         <Grow in={aboutLoad}>
-                
+                            <div className='home-info'>
                             <div>
-                                <div className='home-info'>
-                                       <div>
-                                            <h1>Daniel Couperthwaite</h1>
-                                            <p>Dreamer - Creater - Full Stack Developer</p>
-                                       </div>
-                                       <div styles={{position: "block"}} >
+                        
+                        
+                            <div className='social-holder'>
                                             <a  href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
                                                 <button className="social-link">
                                                     <img src={li}></img>
@@ -53,14 +50,19 @@ export default function Home ({projects}) {
                                                     <img src={gh}></img>
                                                 </button>
                                             </a>
-                                       </div>
-                                        
-                                    
+                                        </div>    
+
+
+                                
+                                       <div>
+                                            <h1>Daniel Couperthwaite</h1>
+                                            <p>Full Stack Developer</p>
+                                       </div>    
                                 </div> 
                             </div>
                         </Grow>
                     </Box>
-                    
+
                     
 
                     <div className='option-holder'>
@@ -97,10 +99,8 @@ export default function Home ({projects}) {
                     
                     <Box>
                         <Grow in={projectLoad}>
-                        <div styles={{width: "100%"}}
-                        // className='projects-home1'
-                        >
-                            {/* <h2>Projects:</h2> */}
+                        <div styles={{width: "100%", margin: "0", padding: "0"}}>
+                        
                                 {projects.map((project) => {
                                                         return (
                                                             <>
