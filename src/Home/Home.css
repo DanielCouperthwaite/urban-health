@@ -24,15 +24,16 @@ p {
 .home-button {
     color: rgb(255, 255, 255);
     opacity: 0.85;
-    size: 1em;
     /* margin: 5px; */
     width: 100%;
     border: solid white;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .option-holder {
     display: flex; 
-    width: 100%;
+    justify-content: space-between;
 
 }
 
@@ -40,6 +41,7 @@ p {
     flex: 1;
     width: 100%;
     margin: 10px;
+    text-align: center;
 }
 
 .projects-home1 {
