@@ -35,7 +35,7 @@ export default function Home ({projects}) {
             
             <div>
                 <div>
-                   <Box>
+                   {/* <Box>
                         <Grow in={aboutLoad}>
                             <div className='home-info'>
                             <div>
@@ -99,7 +99,7 @@ export default function Home ({projects}) {
                     </div>
                     
                     
-                    {/* <Box>
+                    <Box>
                         <Grow in={projectLoad}>
                         <div styles={{width: "100%", margin: "0", padding: "0"}}>
                         
