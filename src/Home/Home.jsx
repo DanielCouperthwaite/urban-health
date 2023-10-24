@@ -42,14 +42,14 @@ export default function Home ({projects}) {
                                             <h1>Daniel Couperthwaite</h1>
                                             <p>Dreamer - Creater - Full Stack Developer</p>
                                        </div>
-                                       <div display="flex">
-                                            <a href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
-                                                <button className="project-links">
+                                       <div styles={{display: "block"}} >
+                                            <a  href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
+                                                <button className="social-link">
                                                     <img src={li}></img>
                                                 </button>
                                             </a>
                                             <a href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
-                                                <button className="project-links">
+                                                <button className="social-link">
                                                     <img src={gh}></img>
                                                 </button>
                                             </a>

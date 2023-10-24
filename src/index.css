@@ -31,12 +31,9 @@ body {
 }
 
 h1 {
-  font-size: 6vw;
+  font-size: 5vw;
   line-height: 1.1;
-  padding-left: auto;
-  padding-right: auto;
-  padding-top: 1vw;
-  padding-bottom: 1vw;
+  padding: 5.5vw
 }
 
 button {
