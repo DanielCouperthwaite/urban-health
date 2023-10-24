@@ -8,6 +8,8 @@ import face from "../assets/face.png"
 import li from "../assets/linkedin.png"
 import gh from "../assets/gh.png"
 
+import name from "../assets/name.png"
+
 export default function Home ({projects}) {
 
     const [aboutLoad, setAboutLoad] = useState(false)
@@ -54,8 +56,8 @@ export default function Home ({projects}) {
 
 
                                 
-                                       <div style={{padding: "80px"}}>
-                                            <h1>Daniel Couperthwaite</h1>
+                                       <div style={{marginTop: "40px", marginBottom: "40px"}}>
+                                            <img className="name" src={name}></img>
                                             <p>Full Stack Developer</p>
                                        </div>    
                                 </div> 

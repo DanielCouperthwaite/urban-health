@@ -56,7 +56,7 @@ p {
   }
 
 .project-button {
-    width: 100%;
+    width: 25%;
     max-width: 340px;
     min-width: 300px;
 }
@@ -83,5 +83,10 @@ p {
     width: 80%;
     height: auto;
     min-width: 80px;
+}
+
+.name {
+    width: 80%;
+    height: auto;
 }
 
