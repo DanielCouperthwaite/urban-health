@@ -47,10 +47,14 @@ export default function Tech () {
                     <Grow in={loadTwo}>
                     <div className="about">
                         <div className='tech-info'>
-                            <p><strong>Languages: </strong>Javascript, Typescript, C#, .NET</p>
-                            <p><strong>Front End: </strong>React, React Native, HTML5, CSS3, Tailwind CSS</p>
-                            <p><strong>Back End: </strong>Express, test driven development with Jest, PostgreSQL, Firebase</p>
-                            <p><strong>Development: </strong>AGILE Methodologies, paired programming, working in and managing scrums</p>
+                            <p className='tech-span'><strong>Languages: </strong></p>
+                            <p className='tech-p'>Javascript, Typescript, C#, ASP .NET</p>
+                            <p className='tech-span'><strong>Front-End:</strong></p>
+                            <p className='tech-p'>React, React Native, HTML5, CSS3, Tailwind CSS</p>
+                            <p className='tech-span'><strong>Back-End:</strong></p>
+                            <p className='tech-p'>Express, test driven development with Jest, seeding databases PostgreSQL, Firebase</p>
+                            <p className='tech-span'><strong>Development</strong></p>
+                            <p className='tech-p'>AGILE Methodologies, paired programming, working in and managing scrums</p>
                         </div>
                         
                         <div>
