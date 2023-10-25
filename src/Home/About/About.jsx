@@ -28,10 +28,16 @@ export default function About () {
                 <Grow in={load}>
                     <div className="about">
                     
-                    
+                                        <div className='social-holder' style={{marginRight: "10px"}}>
+                                        <Link to="/home">
+                                            
+                                                <p>{"X"}</p>
+                                            
+                                        </Link>
+                                        </div>  
                     
                         
-                        <h3>Hello!</h3>
+                        <h3 style={{marginTop: "-20px"}}>Hello!</h3>
                         <p>I'm Daniel Couperthwaite, a full stack developer based in Manchester.</p>
                         <img className='face' src={face} alt="Daniel smiling for the camera"/>
                         <p>I created this site to show off some of my skills, projects, coding experience and, hopefully, a little of me as well!</p>
