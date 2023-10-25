@@ -29,7 +29,6 @@ export default function Home ({projects}) {
           
             <ParticleEffectHome />  
 
-
             
             <div>
                 <div>
@@ -68,7 +67,7 @@ export default function Home ({projects}) {
                     <Grow in={techLoad}>
                     <div className='option-holder'>
                         <div
-                        className="options">
+                        className="options" style={{marginRight: "20px"}}>
                             
                                 
                                     
@@ -82,7 +81,7 @@ export default function Home ({projects}) {
                             
                         </div>
                         
-                        <div className="options">
+                        <div className="options" style={{marginLeft: "20px"}}>
                             
                                 
                                    
