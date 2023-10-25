@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import { Box, Grow } from '@mui/material'
 
 import face from "../../assets/face.png"
+import ParticleEffectAbout from './ParticleEffectAbout'
+
 
 export default function About () {
 
@@ -19,6 +21,9 @@ export default function About () {
 
     return (
         <>
+
+            <ParticleEffectAbout />
+
             <Box>
                 <Grow in={load}>
                     <div className="about">
