@@ -42,12 +42,12 @@ export default function Home ({projects}) {
                                         <div className='social-holder'>
                                             <a  href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
                                                 <button className="social-link">
-                                                    <img src={li} alt="linked in logo"></img>
+                                                    <img src={li} alt="linked in logo" style={{width: "60%", height: "auto"}}></img>
                                                 </button>
                                             </a>
                                             <a href="https://github.com/DanielCouperthwaite" target='_blank'>
                                                 <button className="social-link">
-                                                    <img src={gh} alt="github logo"></img>
+                                                    <img src={gh} alt="github logo" style={{width: "60%", height: "auto"}}></img>
                                                 </button>
                                             </a>
                                         </div>    
