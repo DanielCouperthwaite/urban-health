@@ -26,7 +26,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 375px;
+  min-width: 372px;
   min-height: 100vh;
 }
 
@@ -36,7 +36,7 @@ h1 {
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 24px;
 }
 
 
@@ -56,7 +56,7 @@ button {
   opacity: 1;
 }
 button:hover {
-  border-color: #646cff;
+  opacity: 0.6;
 }
 
 h3 {

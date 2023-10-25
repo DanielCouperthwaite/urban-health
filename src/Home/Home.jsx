@@ -2,9 +2,8 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
 import ParticleEffectHome from './ParticleEffectHome'
-import { Box, Fade, Grow, Slide } from '@mui/material'
+import { Box, Grow } from '@mui/material'
 
-import face from "../assets/face.png"
 import li from "../assets/linkedin.png"
 import gh from "../assets/gh.png"
 
@@ -15,7 +14,6 @@ export default function Home ({projects}) {
     const [aboutLoad, setAboutLoad] = useState(false)
     const [techLoad, setTechLoad] = useState(false)
     const [projectLoad, setProjectLoad] = useState(false)
-    const [particleLoad, setParticleLoad] = useState(false)
 
     useEffect(() => {
 
@@ -44,12 +42,12 @@ export default function Home ({projects}) {
                                         <div className='social-holder'>
                                             <a  href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
                                                 <button className="social-link">
-                                                    <img src={li}></img>
+                                                    <img src={li} alt="linked in logo"></img>
                                                 </button>
                                             </a>
                                             <a href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
                                                 <button className="social-link">
-                                                    <img src={gh}></img>
+                                                    <img src={gh} alt="github logo"></img>
                                                 </button>
                                             </a>
                                         </div>    
@@ -102,12 +100,15 @@ export default function Home ({projects}) {
                     <Box>
                         <Grow in={projectLoad}>
                         <div styles={{width: "100%", margin: "0", padding: "0"}}>
-                        
+                                <div className='project-titles'>
+                                    <h2>Projects:</h2>
+                                </div >
+                                
                                 {projects.map((project) => {
                                                         return (
                                                             <>
                                                                 <Link  to={`/project/${project.name}`} projects={projects}>
-                                                                    <button className='project-button'>
+                                                                    <button className='project-button' styles={{marginTop: "0"}}>
                                                                         <h2>{project.name}</h2>
                                                                         <p>{project.lang}</p>
                                                                         <img className="homeImage" src={project.images[0]} />

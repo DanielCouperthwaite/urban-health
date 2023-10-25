@@ -94,3 +94,8 @@ p {
     height: auto;
 }
 
+.project-titles {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
