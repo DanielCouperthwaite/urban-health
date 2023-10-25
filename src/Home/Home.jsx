@@ -101,7 +101,7 @@ export default function Home ({projects}) {
                         <Grow in={projectLoad}>
                         <div styles={{width: "100%", margin: "0", padding: "0"}}>
                                 <div className='project-titles'>
-                                    <h2>Projects:</h2>
+                                    <p>Projects:</p>
                                 </div >
                                 
                                 {projects.map((project) => {
