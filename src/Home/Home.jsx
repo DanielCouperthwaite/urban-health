@@ -45,7 +45,7 @@ export default function Home ({projects}) {
                                                     <img src={li} alt="linked in logo"></img>
                                                 </button>
                                             </a>
-                                            <a href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
+                                            <a href="https://github.com/DanielCouperthwaite" target='_blank'>
                                                 <button className="social-link">
                                                     <img src={gh} alt="github logo"></img>
                                                 </button>
@@ -64,11 +64,13 @@ export default function Home ({projects}) {
                     </Box>
 
                     
-
+                    <Box>
+                    <Grow in={techLoad}>
                     <div className='option-holder'>
-                        <Box className="options">
+                        <div
+                        className="options">
                             
-                                <Grow in={techLoad}>
+                                
                                     
                                         <Link to="/about">
                                             <button className='home-button'>
@@ -76,13 +78,13 @@ export default function Home ({projects}) {
                                             </button>   
                                         </Link>
                                    
-                                </Grow>
+                                
                             
-                        </Box>
+                        </div>
                         
-                        <Box className="options">
+                        <div className="options">
                             
-                                <Grow in={techLoad}>
+                                
                                    
                                         <Link to="/tech">
                                             <button className='home-button'>
@@ -90,12 +92,13 @@ export default function Home ({projects}) {
                                             </button>   
                                         </Link>
                                     
-                                </Grow>
+                                
                             
                                 
-                        </Box>
+                        </div>
                     </div>
-                    
+                    </Grow>
+                    </Box>
                     
                     <Box>
                         <Grow in={projectLoad}>
@@ -110,8 +113,8 @@ export default function Home ({projects}) {
                                                                 <Link  to={`/project/${project.name}`} projects={projects}>
                                                                     <button className='project-button' styles={{marginTop: "0"}}>
                                                                         <h2>{project.name}</h2>
-                                                                        <p>{project.lang}</p>
                                                                         <img className="homeImage" src={project.images[0]} />
+                                                                        <p>{project.lang}</p>
                                                                     </button>
                                                                 </Link>
                                                             </>
