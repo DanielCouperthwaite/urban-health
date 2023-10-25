@@ -9,13 +9,15 @@ import ParticleEffectAbout from './ParticleEffectAbout'
 
 export default function About () {
 
-    const [load, setLoad] =useState(false)
+    const [loadOne, setLoadOne] =useState(false)
+    const [loadTwo, setLoadTwo] =useState(false)
 
     useEffect(() => {
 
             window.scrollTo(0, 0)
 
-            setTimeout(() => setLoad(true) , 500);
+            setTimeout(() => setLoadOne(true) , 500);
+            setTimeout(() => setLoadTwo(true) , 1000);
            
         }, [])
 
@@ -25,13 +27,13 @@ export default function About () {
             <ParticleEffectAbout />
 
             <Box>
-                <Grow in={load}>
+                <Grow in={loadOne}>
                     <div className="about">
                     
                                         <div className='social-holder' style={{marginRight: "10px"}}>
                                         <Link to="/home">
                                             
-                                                <p>{"X"}</p>
+                                                <p>{"x"}</p>
                                             
                                         </Link>
                                         </div>  
@@ -40,6 +42,10 @@ export default function About () {
                         <h3 style={{marginTop: "-20px"}}>Hello!</h3>
                         <p>I'm Daniel Couperthwaite, a full stack developer based in Manchester.</p>
                         <img className='face' src={face} alt="Daniel smiling for the camera"/>
+                    </div>
+                    </Grow>    
+                    <Grow in={loadTwo}>
+                    <div className="about">
                         <p>I created this site to show off some of my skills, projects, coding experience and, hopefully, a little of me as well!</p>
                         <p>(And particle effects! Lots of particle effects!)</p>
                         <p>Outside of coding you can usually find me on a mountain somewhere, buried in a recipe book or trying for the thousandth time to finally play YYZ on guitar.</p>
