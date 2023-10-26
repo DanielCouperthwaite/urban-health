@@ -50,11 +50,11 @@ export default function Tech () {
                             <p className='tech-span'><strong>Languages: </strong></p>
                             <p className='tech-p'>Javascript, Typescript, C#, ASP .NET</p>
                             <p className='tech-span'><strong>Front-End:</strong></p>
-                            <p className='tech-p'>React, React Native, HTML5, CSS3, Tailwind CSS</p>
+                            <p className='tech-p'>React, React Native, HTML5, CSS3, Tailwind CSS, Bootstrap CSS</p>
                             <p className='tech-span'><strong>Back-End:</strong></p>
-                            <p className='tech-p'>Express, test driven development with Jest, seeding databases PostgreSQL, Firebase</p>
-                            <p className='tech-span'><strong>Development</strong></p>
-                            <p className='tech-p'>AGILE Methodologies, paired programming, working in and managing scrums</p>
+                            <p className='tech-p'>Express, test driven development with Jest, seeding databases, PostgreSQL, Firebase</p>
+                            <p className='tech-span'><strong>Development:</strong></p>
+                            <p className='tech-p'>AGILE Methodologies, paired programming, working in and managing scrums, live hosting through Render and Netlify</p>
                         </div>
                         
                         <div>
