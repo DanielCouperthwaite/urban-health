@@ -1,5 +1,5 @@
 .image-holder {
-    width: 70%;
+    width: 100%;
     height: auto;
     margin: auto;
 }
@@ -15,7 +15,7 @@
 }
 
 .screenshot {
-    max-width: 80%;
+    max-width: 60%;
     height: auto;
     display: block;
     margin: auto;
@@ -26,7 +26,7 @@
     border-radius: 50%; 
     width: 14px;  
     height: 14px; 
-    margin-top: 260px;
+    margin-top: 160px;
   }
   
 .slider-control-bottomcenter svg{

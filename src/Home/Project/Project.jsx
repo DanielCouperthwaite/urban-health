@@ -5,7 +5,7 @@ import { useParams, Link } from 'react-router-dom'
 import './Project.css'
 
 import gh from "../../assets/gh.png"
-import linkedin from "../../assets/linkedin.png"
+
 
 export default function Project ({projects}) {
 
@@ -25,7 +25,15 @@ export default function Project ({projects}) {
     return (
         <>
 
-            <h2>{name}</h2>
+            <div className='social-holder' style={{marginRight: "10px"}}>
+                <Link to="/home">
+                                            
+                    <p>{"x"}</p>
+                                            
+                </Link>
+            </div> 
+
+            <h3 style={{marginTop: "-20px"}}>{name}</h3>
             <p>{descr1}</p>
             <p>{descr11}</p>
 

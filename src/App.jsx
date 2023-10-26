@@ -22,7 +22,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/tech" element={<Tech />} />
           <Route path="/project/:chosenProject" element={<Project projects={projectsArray}/>} />
-          
         </Routes>
         
       </BrowserRouter>
