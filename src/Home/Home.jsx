@@ -49,14 +49,14 @@ export default function Home ({projects}) {
                                                     <img src={gh} alt="github logo" style={{width: "60%", height: "auto"}}></img>
                                                 </button>
                                             </a>
-                                        </div>     */}
+                                        </div>    
 
 
                                 
                                        <div style={{marginTop: "40px", marginBottom: "40px", marginLeft: "0", marginRight: "0"}}>
                                             <img className="name" src={name}></img>
                                             <p>Full Stack Developer</p>
-                                       </div>    
+                                       </div>     */}
                                 </div> 
                             </div>
                         </Grow>
