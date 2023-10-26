@@ -46,7 +46,6 @@ p {
 .projects-home1 {
     opacity: 0.8 !important;
     border-radius: 8px;
-    /* margin: 5px;  */
     padding-top: 0.3em;
     margin-top: 15px; 
     background-color: #1a1a1a;
@@ -59,7 +58,7 @@ p {
 .project-button {
     width: 25%;
     max-width: 360px;
-    min-width: 300px;
+    min-width: 280px;
     color: white;
     border: "1px solid white";
     opacity: 0.9;
