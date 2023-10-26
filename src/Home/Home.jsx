@@ -38,7 +38,7 @@ export default function Home ({projects}) {
                             <div>
                         
                         
-                                        {/* <div className='social-holder'>
+                                        <div className='social-holder'>
                                             <a  href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
                                                 <button className="social-link">
                                                     <img src={li} alt="linked in logo" style={{width: "60%", height: "auto"}}></img>
@@ -53,7 +53,7 @@ export default function Home ({projects}) {
 
 
                                 
-                                       <div style={{marginTop: "40px", marginBottom: "40px", marginLeft: "0", marginRight: "0"}}>
+                                       {/* <div style={{marginTop: "40px", marginBottom: "40px", marginLeft: "0", marginRight: "0"}}>
                                             <img className="name" src={name}></img>
                                             <p>Full Stack Developer</p>
                                        </div>     */}
