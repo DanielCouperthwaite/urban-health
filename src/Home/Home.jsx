@@ -32,13 +32,13 @@ export default function Home ({projects}) {
             
             <div>
                 <div>
-                   {/* <Box>
+                   <Box>
                         <Grow in={aboutLoad}>
                             <div className='home-info'>
                             <div>
                         
                         
-                                        <div className='social-holder'>
+                                        {/* <div className='social-holder'>
                                             <a  href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
                                                 <button className="social-link">
                                                     <img src={li} alt="linked in logo" style={{width: "60%", height: "auto"}}></img>
@@ -49,7 +49,7 @@ export default function Home ({projects}) {
                                                     <img src={gh} alt="github logo" style={{width: "60%", height: "auto"}}></img>
                                                 </button>
                                             </a>
-                                        </div>    
+                                        </div>     */}
 
 
                                 
@@ -60,7 +60,7 @@ export default function Home ({projects}) {
                                 </div> 
                             </div>
                         </Grow>
-                    </Box> */}
+                    </Box>
 
                     
                     <Box>
