@@ -32,7 +32,7 @@ export default function Home ({projects}) {
             
             <div>
                 <div>
-                   <Box>
+                   {/* <Box>
                         <Grow in={aboutLoad}>
                             <div className='home-info'>
                             <div>
@@ -63,7 +63,7 @@ export default function Home ({projects}) {
                     </Box>
 
                     
-                    {/* <Box>
+                    <Box>
                     <Grow in={techLoad}>
                     <div className='option-holder'>
                         <div
