@@ -63,6 +63,9 @@ p {
     color: white;
     border: "1px solid white";
     opacity: 0.9;
+    max-height: 400px;
+    object-fit: cover;
+    overflow:hidden;
 }
 
 .social-holder {
@@ -87,6 +90,12 @@ p {
     width: 80%;
     height: auto;
     min-width: 80px;
+    overflow:hidden;
+    max-height: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center 5%;
+
 }
 
 .name {

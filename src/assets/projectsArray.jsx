@@ -36,7 +36,7 @@ import lb8 from "./lb8.png"
 export const projectsArray = [
     {
         name: "Number Blast", 
-        lang: "Javascript, React",
+        // lang: "Javascript, React",
         images: [nb1, nb3, nb4, nb5],
         descr1: "Welcome to number Blast, a reaction based number game designed to test your speed against the clock!",
         descr2: "Built in Javascript with React, Firebase and tsParticles, Number Blast offers a fun and frantic gaming experience to challenge you and your freinds! How fast are you under pressure?",
@@ -174,7 +174,7 @@ export const projectsArray = [
         github: "https://github.com/DanielCouperthwaite/functions-playground",
     },
     {
-        name: "Bonus: Homemade Naan Breads", 
+        name: "Bonus: Naan Breads", 
         lang: "",
         images: [naan1, naan2],
         descr1: "Nothing at all to do with development I'm afraid, but who doesn't like a little baking between debugging!",
