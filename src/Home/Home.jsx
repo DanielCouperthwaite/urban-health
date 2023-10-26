@@ -60,7 +60,7 @@ export default function Home ({projects}) {
                                 </div> 
                             </div>
                         </Grow>
-                    </Box>
+                    </Box> */}
 
                     
                     <Box>
@@ -122,7 +122,7 @@ export default function Home ({projects}) {
                             
                             </div>
                         </Grow>
-                    </Box> */}
+                    </Box>
                 </div>
                 
             </div>
