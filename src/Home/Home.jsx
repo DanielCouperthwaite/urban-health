@@ -27,10 +27,10 @@ export default function Home ({projects}) {
     return (
         <>
           
-            {/* <ParticleEffectHome />   */}
+            <ParticleEffectHome />  
 
             
-            <div>
+            {/* <div>
                 <div>
                    <Box>
                         <Grow in={aboutLoad}>
@@ -125,7 +125,7 @@ export default function Home ({projects}) {
                     </Box>
                 </div>
                 
-            </div>
+            </div> */}
             
         </>
     )
