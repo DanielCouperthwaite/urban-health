@@ -30,7 +30,7 @@ export default function Home ({projects}) {
             <ParticleEffectHome />  
 
             
-            {/* <div>
+            <div>
                 <div>
                    <Box>
                         <Grow in={aboutLoad}>
@@ -63,7 +63,7 @@ export default function Home ({projects}) {
                     </Box>
 
                     
-                    <Box>
+                    {/* <Box>
                     <Grow in={techLoad}>
                     <div className='option-holder'>
                         <div
@@ -122,10 +122,10 @@ export default function Home ({projects}) {
                             
                             </div>
                         </Grow>
-                    </Box>
+                    </Box> */}
                 </div>
                 
-            </div> */}
+            </div>
             
         </>
     )
