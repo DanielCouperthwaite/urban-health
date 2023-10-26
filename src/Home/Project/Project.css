@@ -1,3 +1,17 @@
+.project-page {
+    width: 80%;
+    margin: auto;
+}
+
+.project-info {
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
 .image-holder {
     width: 100%;
     height: auto;
@@ -19,6 +33,7 @@
     height: auto;
     display: block;
     margin: auto;
+    padding: 5px;
 }
 
 .slider-control-bottomcenter button{

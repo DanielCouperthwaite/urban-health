@@ -48,6 +48,7 @@ export default function About () {
                     <div className="about">
                         <p>I created this site to show off some of my skills, projects, coding experience and, hopefully, a little of me as well!</p>
                         <p>(And particle effects! Lots of particle effects!)</p>
+                        <p>I am passionate about technology and always trying to learn new skills.</p>
                         <p>Outside of coding you can usually find me on a mountain somewhere, buried in a recipe book or trying for the thousandth time to finally play YYZ on guitar.</p>
                         <p>So come on in. I'll put the kettle on. Make yourself at home. </p>
                     
