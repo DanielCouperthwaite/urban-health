@@ -5,6 +5,7 @@ import { useParams, Link } from 'react-router-dom'
 import './Project.css'
 
 import gh from "../../assets/gh.png"
+import ParticleEffectProject from './ParticleEffectProject'
 
 
 export default function Project ({projects}) {
@@ -24,6 +25,9 @@ export default function Project ({projects}) {
 
     return (
         <>
+
+            <ParticleEffectProject />
+
             <div className='project-page'>
                 <div className='social-holder' style={{marginRight: "10px"}}>
                     <Link to="/home">
