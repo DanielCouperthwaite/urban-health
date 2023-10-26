@@ -58,7 +58,7 @@ p {
 .project-button {
     width: 25%;
     max-width: 360px;
-    min-width: 300px;
+    min-width: 280px;
     color: white;
     border: "1px solid white";
     opacity: 0.9;
