@@ -11,23 +11,23 @@ import name from "../assets/name.png"
 
 export default function Home ({projects}) {
 
-    const [aboutLoad, setAboutLoad] = useState(false)
-    const [techLoad, setTechLoad] = useState(false)
-    const [projectLoad, setProjectLoad] = useState(false)
+    // const [aboutLoad, setAboutLoad] = useState(false)
+    // const [techLoad, setTechLoad] = useState(false)
+    // const [projectLoad, setProjectLoad] = useState(false)
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        window.scrollTo(0, 0)
+    //     window.scrollTo(0, 0)
 
-        setTimeout(() => setAboutLoad(true) , 500);
-        setTimeout(() => setTechLoad(true) , 1000);
-        setTimeout(() => setProjectLoad(true), 1500);
-    }, [])
+    //     setTimeout(() => setAboutLoad(true) , 500);
+    //     setTimeout(() => setTechLoad(true) , 1000);
+    //     setTimeout(() => setProjectLoad(true), 1500);
+    // }, [])
 
     return (
         <>
           
-            <ParticleEffectHome />  
+            {/* <ParticleEffectHome />  
 
             
             <div>
@@ -125,7 +125,7 @@ export default function Home ({projects}) {
                     </Box>
                 </div>
                 
-            </div>
+            </div> */}
             
         </>
     )
