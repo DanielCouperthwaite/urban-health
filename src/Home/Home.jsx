@@ -53,10 +53,10 @@ export default function Home ({projects}) {
 
 
                                 
-                                       {/* <div style={{marginTop: "40px", marginBottom: "40px", marginLeft: "0", marginRight: "0"}}>
-                                            <img className="name" src={name}></img>
+                                       <div style={{marginTop: "40px", marginBottom: "40px", marginLeft: "0", marginRight: "0"}}>
+                                            {/* <img className="name" src={name}></img> */}
                                             <p>Full Stack Developer</p>
-                                       </div>     */}
+                                       </div>    
                                 </div> 
                             </div>
                         </Grow>
