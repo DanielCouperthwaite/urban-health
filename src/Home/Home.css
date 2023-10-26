@@ -58,7 +58,7 @@ p {
 .project-button {
     width: 25%;
     max-width: 360px;
-    min-width: 200px;
+    min-width: 280px;
     color: white;
     border: "1px solid white";
     opacity: 0.9;
@@ -90,7 +90,7 @@ p {
     height: auto;
     min-width: 80px;
     overflow:hidden;
-    max-height: 200px;
+    max-height: 280px;
     border-radius: 10px;
     object-fit: cover;
     object-position: center 5%;
@@ -100,7 +100,7 @@ p {
 .name {
     width: 60%;
     height: auto;
-    min-width: 200px;
+    min-width: 280px;
 }
 
 .project-titles {
