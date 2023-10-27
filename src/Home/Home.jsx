@@ -67,7 +67,7 @@ export default function Home ({projects}) {
                     <Grow in={techLoad}>
                     <div className='option-holder'>
                         <div
-                        className="options" style={{marginRight: "20px"}}>
+                        className="options" >
                             
                                 
                                     
@@ -81,7 +81,7 @@ export default function Home ({projects}) {
                             
                         </div>
                         
-                        {/* <div className="options" style={{marginLeft: "20px"}}>
+                        <div className="options">
                             
                                 
                                    
@@ -94,7 +94,7 @@ export default function Home ({projects}) {
                                 
                             
                                 
-                        </div> */}
+                        </div>
                     </div>
                     </Grow>
                     </Box>
