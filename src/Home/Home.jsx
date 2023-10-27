@@ -63,7 +63,7 @@ export default function Home ({projects}) {
                     </Box>
 
                     
-                    <Box>
+                    {/* <Box>
                     <Grow in={techLoad}>
                     <div className='option-holder'>
                         <div
@@ -72,7 +72,7 @@ export default function Home ({projects}) {
                                 
                                     
                                         <Link to="/about">
-                                            <button style={{marginRight: "0px"}} className='home-button'>
+                                            <button className='home-button'>
                                                 <h2>About Me</h2>
                                             </button>   
                                         </Link>
@@ -86,7 +86,7 @@ export default function Home ({projects}) {
                                 
                                    
                                         <Link to="/tech">
-                                            <button style={{marginLeft: "0px"}} className='home-button'>
+                                            <button  className='home-button'>
                                                 <h2> Tech Skills</h2>
                                             </button>   
                                         </Link>
@@ -97,7 +97,7 @@ export default function Home ({projects}) {
                         </div>
                     </div>
                     </Grow>
-                    </Box>
+                    </Box> */}
                     
                     <Box>
                         <Grow in={projectLoad}>
