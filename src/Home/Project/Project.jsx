@@ -109,7 +109,7 @@ export default function Project ({projects}) {
                                 {link4 === "" ? null : <a href={link4} target="blank"><button className='project-links'>{link4Descr}</button> </a>}
                                 <div>
                                         <Link to="/home">
-                                            <button style={{width: "200px"}}>
+                                            <button >
                                                 <p>Back</p>
                                             </button>   
                                         </Link>
