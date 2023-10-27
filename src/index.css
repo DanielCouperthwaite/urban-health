@@ -26,7 +26,7 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 300px;
+  /* min-width: 300px; */
   min-height: 100vh;
   overflow-x:hidden;
 }
@@ -48,8 +48,7 @@ button {
   
   cursor:pointer;
   
-  /* 
-  font-size: 1em;
+  /* font-size: 1em;
   font-weight: 500;
   transition: border-color 0.25s;
   color: black(212, 255, 0);

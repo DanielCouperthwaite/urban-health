@@ -32,7 +32,7 @@ export default function Home ({projects}) {
             
             <div>
                 <div>
-                   {/* <Box>
+                   <Box>
                         <Grow in={aboutLoad}>
                             <div className='home-info'>
                             <div>
@@ -122,7 +122,7 @@ export default function Home ({projects}) {
                             
                             </div>
                         </Grow>
-                    </Box> */}
+                    </Box>
                 </div>
                 
             </div>
