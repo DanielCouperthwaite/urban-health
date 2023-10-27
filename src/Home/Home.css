@@ -32,8 +32,10 @@ p {
     width: 70%;
     height: 100%;
     text-align: center;
-    margin:auto;
-    vertical-align: middle;
+    /* margin:auto;
+    vertical-align: middle; */
+    height: 90px;
+    border-radius: 15px;
 }
 
 .home-button {
@@ -43,7 +45,8 @@ p {
     height: 100%;
     border: solid white;
     vertical-align: middle;
-    margin:auto;
+    border-radius: 25px;
+    /* margin:auto; */
 }
 
 .projects-home1 {
