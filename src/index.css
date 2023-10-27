@@ -40,23 +40,23 @@ h2 {
   font-size: 22px;
 }
 
-/* button {
+button {
   border-radius: 8px;
-  
+  background-color: #ec00e0;
   
   font-family: inherit;
   font-size: 1em;
   font-weight: 500;
+  cursor:pointer;
   
-  background-color: #ec00e0;
-  cursor: pointer;
+  /* 
   transition: border-color 0.25s;
   color: black(212, 255, 0);
   size: 1em;
   width: 100%;
   max-width: 100%;
-  opacity: 1;
-} */
+  opacity: 1; */
+}
 button:hover {
   opacity: 0.6;
 }
