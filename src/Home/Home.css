@@ -100,7 +100,7 @@ p {
 .name {
     width: 60%;
     height: auto;
-    min-width: 280px;
+    min-width: 240px;
 }
 
 .project-titles {
