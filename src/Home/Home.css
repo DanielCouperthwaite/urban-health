@@ -21,16 +21,6 @@ p {
     display: relative;
 }
 
-.home-button {
-    color: rgb(255, 255, 255);
-    opacity: 0.85;
-    /* margin: 5px; */
-    width: 98%;
-    border: solid white;
-    height: 100%;
-    vertical-align: middle;
-}
-
 .option-holder {
     display: flex; 
     margin: auto;
@@ -42,6 +32,16 @@ p {
     width: 70%;
     text-align: center;
     /* margin:auto; */
+}
+
+.home-button {
+    color: rgb(255, 255, 255);
+    opacity: 0.85;
+    /* margin: 5px; */
+    width: 70%;
+    border: solid white;
+    height: 100%;
+    vertical-align: middle;
 }
 
 .projects-home1 {
