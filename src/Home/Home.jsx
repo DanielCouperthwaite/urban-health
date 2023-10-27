@@ -73,7 +73,7 @@ export default function Home ({projects}) {
                                     
                                         <Link to="/about">
                                             <button className='home-button'>
-                                                <h2>About Me</h2>
+                                                <p>About Me</p>
                                             </button>   
                                         </Link>
                                    
@@ -87,7 +87,7 @@ export default function Home ({projects}) {
                                    
                                         <Link to="/tech">
                                             <button className='home-button'>
-                                                <h2>Tech Skills</h2>
+                                                <p>Tech Skills</p>
                                             </button>   
                                         </Link>
                                     
