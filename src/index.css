@@ -42,9 +42,12 @@ h2 {
 
 /* button {
   border-radius: 8px;
+  
+  
+  font-family: inherit;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
+  
   background-color: #ec00e0;
   cursor: pointer;
   transition: border-color 0.25s;
