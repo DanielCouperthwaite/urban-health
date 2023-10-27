@@ -59,7 +59,7 @@ p {
 .project-button {
     width: 25%;
     max-width: 360px;
-    min-width: 280px;
+    /* min-width: 280px; */
     color: white;
     border: "1px solid white";
     opacity: 0.9;
@@ -101,7 +101,7 @@ p {
 .name {
     width: 60%;
     height: auto;
-    min-width: 280px;
+    /* min-width: 280px; */
 }
 
 .project-titles {
