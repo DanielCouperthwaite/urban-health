@@ -65,7 +65,6 @@ p {
     max-height: 400px;
     object-fit: cover;
     overflow:hidden;
-    margin: 3px;
 }
 
 .social-holder {
