@@ -63,7 +63,7 @@ export default function Home ({projects}) {
                     </Box>
 
                     
-                    <Box>
+                    {/* <Box>
                     <Grow in={techLoad}>
                     <div className='option-holder'>
                         <div
@@ -97,7 +97,7 @@ export default function Home ({projects}) {
                         </div>
                     </div>
                     </Grow>
-                    </Box>
+                    </Box> */}
                     
                     <Box>
                         <Grow in={projectLoad}>
