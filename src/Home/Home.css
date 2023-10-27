@@ -41,7 +41,7 @@ p {
     flex: 1;
     width: 70%;
     text-align: center;
-    margin:auto;
+    /* margin:auto; */
 }
 
 .projects-home1 {
