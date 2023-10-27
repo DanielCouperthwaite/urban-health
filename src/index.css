@@ -45,11 +45,12 @@ button {
   background-color: #ec00e0;
   
   font-family: inherit;
-  font-size: 1em;
-  font-weight: 500;
+  
   cursor:pointer;
   
   /* 
+  font-size: 1em;
+  font-weight: 500;
   transition: border-color 0.25s;
   color: black(212, 255, 0);
   size: 1em;
