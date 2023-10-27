@@ -40,14 +40,11 @@ h2 {
   font-size: 22px;
 }
 
-button {
+/* button {
   border-radius: 8px;
-  /* padding: 0.3em 0.3em; */
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  /* background-color: #fd02e8; */
-  /* background-color: #ee00da; */
   background-color: #ec00e0;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -56,7 +53,7 @@ button {
   width: 100%;
   max-width: 100%;
   opacity: 1;
-}
+} */
 button:hover {
   opacity: 0.6;
 }
