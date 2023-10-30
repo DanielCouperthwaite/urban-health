@@ -10,7 +10,7 @@ import fp4 from "./fp4.png"
 import fp5 from "./fp5.png"
 
 import nb1 from "./nb1.png"
-import nb2 from "./home/danielcoup/northcoders/post/portfolio/src/assets/nb2.png"
+import nb2 from "./nb2.png"
 import nb3 from "./nb3.png"
 import nb4 from "./nb4.png"
 import nb5 from "./nb5.png"
