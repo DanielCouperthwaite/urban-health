@@ -32,8 +32,10 @@ import jn5 from "./jn5.png"
 import jn6 from "./jn6.png"
 
 import gs1 from "./gs1.png"
+import gs2 from "./gs2.png"
 import gs3 from "./gs3.png"
 import gs4 from "./gs4.png"
+import gs5 from "./gs5.png"
 
 import naan1 from "./naan1.png"
 import naan2 from "./naan2.png"
@@ -71,7 +73,7 @@ export const projectsArray = [
     {
         name: "The Guitar Shop", 
         lang: "",
-        images: [gs3, gs4],
+        images: [gs2, gs3, gs4, gs5],
         thumbnail: gs1,
         descr1: "Welcome to The Guitar Shop, a simple website to highlight stock details available from different locations.",
         descr2: "Built in C# with ASP .NET and Bootstrap CSS, The Guitar Shop offers a frontend source of information for guitar availability, locations and descriptions.",
