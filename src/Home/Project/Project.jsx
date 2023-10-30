@@ -86,6 +86,8 @@ export default function Project ({projects}) {
                     </Grow>
                 </Box>
 
+                {images.map(image => <img className='screenshot' src={image} alt={`Screenshot of ${name} project`}/>)}
+
                 <Box>
                     <Grow in={loadTwo}>
                         <div>
