@@ -81,8 +81,6 @@ export default function Project ({projects}) {
                     </Grow>
                 </Box>
 
-                <img className='screenshot' src={images[0]}/>
-
                 <Box>
                     <Grow in={loadTwo}>
                         <div>
