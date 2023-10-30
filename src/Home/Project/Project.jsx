@@ -11,22 +11,27 @@ import { Box, Grow } from '@mui/material'
 
 export default function Project ({projects}) {
 
-    const [loadOne, setLoadOne] = useState(false)
-    const [loadTwo, setLoadTwo] = useState(false)
-
-    useEffect(() => {
-        window.scrollTo(0, 0)
-
-        setTimeout(() => setLoadOne(true) , 500);
-        setTimeout(() => setLoadTwo(true) , 1000);
-    }, [])
-
-
     const {chosenProject}  = useParams()
     const currentProject = projects.filter((project) => project.name === chosenProject)
 
     const {name, descr1, descr11, descr2, descr3Bold, descr3, descr4Bold, descr4, descr5Bold, descr5, link, linkDescr, github, link2, link2Descr, link3, link3Descr, link4, link4Descr, images} = currentProject[0]
 
+
+    const [loadOne, setLoadOne] = useState(false)
+    const [loadTwo, setLoadTwo] = useState(false)
+    const [projectImages, setProjectImages] = useState([])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+
+        setProjectImages(images)
+
+        setTimeout(() => setLoadOne(true) , 500);
+        setTimeout(() => setLoadTwo(true) , 1000);
+    }, [projectImages])
+
+
+    
     return (
         <>
 
@@ -72,7 +77,7 @@ export default function Project ({projects}) {
                             )}
                             
                         >
-                        {images.map(image => <img className='screenshot' src={image} alt={`Screenshot of ${name} project`}/>)}
+                        {projectImages.map(image => <img className='screenshot' src={image} alt={`Screenshot of ${name} project`}/>)}
                         </Carousel>
                     </div>
                     </div>
