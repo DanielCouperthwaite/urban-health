@@ -9,9 +9,12 @@ import fp4 from "./fp4.png"
 
 
 import nb1 from "./nb1.png"
+import nb2 from "./nb2.png"
 import nb3 from "./nb3.png"
 import nb4 from "./nb4.png"
 import nb5 from "./nb5.png"
+import nb6 from "./nb6.png"
+import nb7 from "./nb7.png"
 
 import won1 from "./won1.png"
 
@@ -39,7 +42,7 @@ export const projectsArray = [
     {
         name: "Number Blast", 
         // lang: "Javascript, React",
-        images: [nb3, nb4, nb5],
+        images: [nb2, nb3, nb4, nb5, nb6, nb7],
         thumbnail: nb1,
         descr1: "Welcome to number Blast, a reaction based number game designed to test your speed against the clock!",
         descr2: "Built in Javascript with React, Firebase and tsParticles, Number Blast offers a fun and frantic gaming experience to challenge you and your friends! How fast are you under pressure?",
