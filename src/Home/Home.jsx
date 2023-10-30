@@ -112,7 +112,7 @@ export default function Home ({projects}) {
                                                                 <Link  to={`/project/${project.name}`} projects={projects}>
                                                                     <button className='project-button' styles={{marginTop: "0"}}>
                                                                         <h2>{project.name}</h2>
-                                                                        <img className="homeImage" src={project.images[0]} />
+                                                                        <img className="homeImage" src={project.thumbnail} />
                                                                         <p>{project.lang}</p>
                                                                     </button>
                                                                 </Link>

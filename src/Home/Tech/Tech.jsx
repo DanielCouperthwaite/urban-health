@@ -48,7 +48,7 @@ export default function Tech () {
                     <div className="about">
                         <div className='tech-info'>
                             <p className='tech-span'><strong>Languages: </strong></p>
-                            <p className='tech-p'>Javascript, Typescript, C#, ASP .NET</p>
+                            <p className='tech-p'>Javascript, Typescript, C#, ASP.NET</p>
                             <p className='tech-span'><strong>Front-End:</strong></p>
                             <p className='tech-p'>React, React Native, HTML5, CSS3, Tailwind CSS, Bootstrap CSS</p>
                             <p className='tech-span'><strong>Back-End:</strong></p>
