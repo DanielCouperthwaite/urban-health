@@ -79,7 +79,7 @@ export default function Project ({projects}) {
                 <div>
                     
                     
-
+                {imagesLoaded ? (
                     <div className='image-holder'>
                         <Carousel 
                             adaptiveHeight='true'
@@ -99,6 +99,9 @@ export default function Project ({projects}) {
                         {images.map(image => <img className='screenshot' src={image} alt={`Screenshot of ${name} project`}/>)}
                         </Carousel>
                     </div>
+                    ) : (
+                        <div>Loading images...</div>
+                    )}
                     </div>
                     </div>
 
