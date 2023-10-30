@@ -30,12 +30,12 @@ import naan1 from "./naan1.png"
 import naan2 from "./naan2.png"
 
 import lb1 from "./lb1.png"
+import lb2 from "./lb2.png"
 import lb3 from "./lb3.png"
 import lb4 from "./lb4.png"
 import lb5 from "./lb5.png"
 import lb6 from "./lb6.png"
 import lb7 from "./lb7.png"
-import lb8 from "./lb8.png"
 
 
 export const projectsArray = [
@@ -82,7 +82,7 @@ export const projectsArray = [
     {
         name: "Love Birds", 
         lang: "",
-        images: [lb3, lb4, lb5, lb6, lb7, lb8],
+        images: [lb2, lb3, lb4, lb5, lb6, lb7],
         thumbnail: lb1,
         descr1: "Built as final project of the Northcoders Bootcamp, Love Birds is a fun and interactive application designed to keep the spark in long distance relationships.",
         descr2: "Built in Typescript with Firebase, React Native and Tailwind CSS, Love Birds allows users to send images, videos and more to their loved ones. Upon receiving their message, users must answer a quiz question or play a game to 'hatch their egg' and receive their prize.",
