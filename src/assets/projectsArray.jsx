@@ -53,7 +53,9 @@ export const projectsArray = [
     {
         name: "Number Blast", 
         // lang: "Javascript, React",
-        images: [nb2, nb3, nb4, nb5, nb6, nb7],
+        images: [nb2, nb3, 
+            // nb4, nb5, nb6, nb7
+        ],
         thumbnail: nb1,
         descr1: "Welcome to number Blast, a reaction based number game designed to test your speed against the clock!",
         descr2: "Built in Javascript with React, Firebase and tsParticles, Number Blast offers a fun and frantic gaming experience to challenge you and your friends! How fast are you under pressure?",
@@ -113,7 +115,9 @@ export const projectsArray = [
     {
         name: "Just News", 
         lang: "",
-        images: [jn2, jn3, jn4, jn5, jn6],
+        images: [jn2, 
+            // jn3, jn4, jn5, jn6
+        ],
         thumbnail: jn1,
         descr1: "What is worse than sifting through ad after ad in search of the headlines? Eurgh! There has to be a better way! How about a site for those wanting articles in a simple format?",
         descr11: "Just News provides Just that, Just when you need it, Just about!",
@@ -157,7 +161,9 @@ export const projectsArray = [
     {
         name: "WeatherOrNot", 
         lang: "",
-        images: [won2, won3, won4, won5, won6],
+        images: [won2, 
+            // won3, won4, won5, won6
+        ],
         thumbnail: won1,
         descr1: "Planning on Kayaking through Borneo? Horse-riding through Outer Mongolia? Fishing in the Amazon? Or maybe just taking the dog out and wondering if that umbrella is really necessary.", 
         descr11: "Find the weather, anywhere in the world, instantly!",
@@ -178,7 +184,9 @@ export const projectsArray = [
     {
         name: "Functions Playground", 
         lang: "",
-        images: [fp2, fp3, fp4, fp5],
+        images: [fp2, 
+            // fp3, fp4, fp5
+        ],
         thumbnail: fp1,
         descr1: "Wow, with all this coding, I wish there was a place we could relax and put the Fun back into Functions!", 
         descr11: "Here it is, a page of simple functions displayed in React for everybody to enjoy. Be sure to check back for updates!",
