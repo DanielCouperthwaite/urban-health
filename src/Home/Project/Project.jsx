@@ -21,7 +21,7 @@ export default function Project ({projects}) {
 
     const [loadOne, setLoadOne] = useState(false)
     const [loadTwo, setLoadTwo] = useState(false)
-    const [projectImages, setProjectImages] = useState([])
+    const [imagesLoaded, setImagesLoaded] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -30,24 +30,20 @@ export default function Project ({projects}) {
         setTimeout(() => setLoadTwo(true) , 1000);
     }, [])
 
-    const [imagesLoaded, setImagesLoaded] = useState(false);
-
     useEffect(() => {
     let loadedImages = 0;
-    const totalImages = images.length;
 
-    function handleImageLoad() {
+    function imageLoad() {
         loadedImages++;
-        if (loadedImages === totalImages) {
+        if (loadedImages === images.length) {
         setImagesLoaded(true);
         }
     };
 
-    // Preload images
     images.forEach((imageSrc) => {
-        const img = new Image();
-        img.src = imageSrc;
-        img.onload = handleImageLoad;
+        const currentImage = new Image();
+        currentImage.src = imageSrc;
+        currentImage.onload = imageLoad;
     });
     }, [images]);
     
@@ -100,15 +96,13 @@ export default function Project ({projects}) {
                         </Carousel>
                     </div>
                     ) : (
-                        <div>Loading images...</div>
+                        <div>Loading...</div>
                     )}
                     </div>
                     </div>
 
                     </Grow>
                 </Box>
-
-                {images.map(image => <img className='screenshot' src={image} alt={`Screenshot of ${name} project`}/>)}
 
                 <Box>
                     <Grow in={loadTwo}>
