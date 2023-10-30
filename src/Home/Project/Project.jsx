@@ -95,7 +95,7 @@ export default function Project ({projects}) {
                             )}
                             
                         >
-                        {projectImages.map(image => <img className='screenshot' src={image} alt={`Screenshot of ${name} project`}/>)}
+                        {images.map(image => <img className='screenshot' src={image} alt={`Screenshot of ${name} project`}/>)}
                         </Carousel>
                     </div>
                 )}
