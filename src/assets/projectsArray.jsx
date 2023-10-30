@@ -6,6 +6,7 @@ import fp1 from "./fp1.png"
 import fp2 from "./fp2.png"
 import fp3 from "./fp3.png"
 import fp4 from "./fp4.png"
+import fp5 from "./fp5.png"
 
 
 import nb1 from "./nb1.png"
@@ -172,7 +173,7 @@ export const projectsArray = [
     {
         name: "Functions Playground", 
         lang: "",
-        images: [fp2, fp3, fp4],
+        images: [fp2, fp3, fp4, fp5],
         thumbnail: fp1,
         descr1: "Wow, with all this coding, I wish there was a place we could relax and put the Fun back into Functions!", 
         descr11: "Here it is, a page of simple functions displayed in React for everybody to enjoy. Be sure to check back for updates!",
