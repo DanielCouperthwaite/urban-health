@@ -17,6 +17,11 @@ import nb6 from "./nb6.png"
 import nb7 from "./nb7.png"
 
 import won1 from "./won1.png"
+import won2 from "./won2.png"
+import won3 from "./won3.png"
+import won4 from "./won4.png"
+import won5 from "./won5.png"
+import won6 from "./won6.png"
 
 import jn1 from "./jn1.png"
 import jn3 from "./jn3.png"
@@ -146,7 +151,7 @@ export const projectsArray = [
     {
         name: "WeatherOrNot", 
         lang: "",
-        images: [won1],
+        images: [won2, won3, won4, won5, won6],
         thumbnail: won1,
         descr1: "Planning on Kayaking through Borneo? Horse-riding through Outer Mongolia? Fishing in the Amazon? Or maybe just taking the dog out and wondering if that umbrella is really necessary.", 
         descr11: "Find the weather, anywhere in the world, instantly!",
