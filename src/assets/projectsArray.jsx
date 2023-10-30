@@ -1,13 +1,13 @@
 import be1 from "./be1.png"
 import be2 from "./be2.png"
 import be3 from "./be3.png"
+import be4 from "./be4.png"
 
 import fp1 from "./fp1.png"
 import fp2 from "./fp2.png"
 import fp3 from "./fp3.png"
 import fp4 from "./fp4.png"
 import fp5 from "./fp5.png"
-
 
 import nb1 from "./nb1.png"
 import nb2 from "./nb2.png"
@@ -25,8 +25,11 @@ import won5 from "./won5.png"
 import won6 from "./won6.png"
 
 import jn1 from "./jn1.png"
+import jn2 from "./jn2.png"
 import jn3 from "./jn3.png"
 import jn4 from "./jn4.png"
+import jn5 from "./jn5.png"
+import jn6 from "./jn6.png"
 
 import gs1 from "./gs1.png"
 import gs3 from "./gs3.png"
@@ -108,7 +111,7 @@ export const projectsArray = [
     {
         name: "Just News", 
         lang: "",
-        images: [jn3, jn4],
+        images: [jn2, jn3, jn4, jn5, jn6],
         thumbnail: jn1,
         descr1: "What is worse than sifting through ad after ad in search of the headlines? Eurgh! There has to be a better way! How about a site for those wanting articles in a simple format?",
         descr11: "Just News provides Just that, Just when you need it, Just about!",
@@ -129,7 +132,7 @@ export const projectsArray = [
     {
         name: "Just News API", 
         lang: "",
-        images: [be2, be3],
+        images: [be2, be3, be4],
         thumbnail: be1,
         descr1: "As pretty as they might be, some of the best sites in the world would be nowhere without a functioning server and database.",
         descr2: "Built with a PostgreSQL, Express JS and Node JS, this api serves the articles used in my Just News site. You can try it yourself with the buttons below. There is a list of all the available endpoints, or a couple of example requests already written out:",
