@@ -21,18 +21,34 @@ export default function Project ({projects}) {
 
     const [loadOne, setLoadOne] = useState(false)
     const [loadTwo, setLoadTwo] = useState(false)
-    const [projectImages, setProjectImages] = useState([])
+    const [imagesLoaded, setImagesLoaded] = useState(false);
 
     useEffect(() => {
         window.scrollTo(0, 0)
 
-        setProjectImages(images)
-
         setTimeout(() => setLoadOne(true) , 500);
         setTimeout(() => setLoadTwo(true) , 1000);
-    }, [projectImages])
-
-    console.log(projectImages)
+        const imagePreloader = new Image();
+        const imageUrls = images;
+    
+        // Counter to track the number of successfully loaded images
+        let loadedImageCount = 0;
+    
+        // Function to check if all images are loaded
+        const checkAllImagesLoaded = () => {
+          loadedImageCount++;
+          if (loadedImageCount === imageUrls.length) {
+            setImagesLoaded(true); // All images are loaded
+          }
+        };
+    
+        // Preload each image
+        imageUrls.forEach((imageUrl) => {
+          imagePreloader.src = imageUrl;
+          imagePreloader.onload = checkAllImagesLoaded;
+          imagePreloader.onerror = checkAllImagesLoaded; // Handle image load errors
+        });
+      }, [currentProject]);
     
     return (
         <>
@@ -62,7 +78,7 @@ export default function Project ({projects}) {
                 <div>
                     
                     
-
+                {imagesLoaded && (
                     <div className='image-holder'>
                         <Carousel 
                             adaptiveHeight='true'
@@ -82,6 +98,7 @@ export default function Project ({projects}) {
                         {projectImages.map(image => <img className='screenshot' src={image} alt={`Screenshot of ${name} project`}/>)}
                         </Carousel>
                     </div>
+                )}
                     </div>
                     </div>
 
