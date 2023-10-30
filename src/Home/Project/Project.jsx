@@ -30,7 +30,26 @@ export default function Project ({projects}) {
         setTimeout(() => setLoadTwo(true) , 1000);
     }, [])
 
-    console.log(projectImages)
+    const [imagesLoaded, setImagesLoaded] = useState(false);
+
+    useEffect(() => {
+    let loadedImages = 0;
+    const totalImages = images.length;
+
+    function handleImageLoad() {
+        loadedImages++;
+        if (loadedImages === totalImages) {
+        setImagesLoaded(true);
+        }
+    };
+
+    // Preload images
+    images.forEach((imageSrc) => {
+        const img = new Image();
+        img.src = imageSrc;
+        img.onload = handleImageLoad;
+    });
+    }, [images]);
     
     return (
         <>
