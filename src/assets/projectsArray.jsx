@@ -18,7 +18,7 @@ import nb6 from "./nb6.png"
 import nb7 from "./nb7.png"
 
 import won1 from "./won1.png"
-import won2 from "./won2.png"
+import won2 from "../assets/won2.png"
 import won3 from "./won3.png"
 import won4 from "./won4.png"
 import won5 from "./won5.png"
