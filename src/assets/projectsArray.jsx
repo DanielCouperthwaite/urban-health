@@ -48,6 +48,11 @@ import lb5 from "./lb5.png"
 import lb6 from "./lb6.png"
 import lb7 from "./lb7.png"
 
+import op1 from "./op1.png"
+import op2 from "./op2.png"
+import op3 from "./op3.png"
+import op4 from "./op4.png"
+
 
 export const projectsArray = [
     {
@@ -189,12 +194,34 @@ export const projectsArray = [
         descr4: "Built with smaller, reuseable functions ready to accomodate any more friendly functions that may join in the fun in future.",
         descr5Bold: "",
         descr5: "",
-        linkDescr: "Try it for yourself",
+        linkDescr: "Try it for yourself!",
         link: "https://functionsplayground7117.netlify.app/",
         link2: "",
         link3: "",
         link4: "",
         github: "https://github.com/DanielCouperthwaite/functions-playground",
+    },
+    {
+        name: "Original Portfolio", 
+        lang: "",
+        images: [op2, op3, op4],
+        thumbnail: op1,
+        descr1: "My first stab at building my own little corner of the web. Flawed but necessary, here is my first portfolio site",
+        descr2: "Built in Javascript, React and Tailwind CSS in July 2023, I wanted a simple, single page site to showcase some of my skills and projects up to that point.",
+        descr3Bold: "Learning from Mistakes. ",
+        descr3: "It is easy to see at just a glance some of the issues I had related to layout, design and mobile to tablet to web size transitions. All of which I have learned from and implemented in this new site.",
+        // link2: "Request a Batch",
+        // link2Descr: "welll",
+        descr4Bold: "Static and Unmoving. ",
+        descr4: "Single images to represent whole projects. A single page lacking routing and complex design elements. Tailwind CSS written exclusively inline without any resused components or classes. ",
+        descr5Bold: "My beautiful Failure. ",
+        descr5: "I had a good understanding that this site would need to be rebuilt fairly soon after first hosting it. Sometimes it really is better to wipe the slate clean and start again, rather than attempting to fix code built from a flawed plan. I am no less proud though, of the first project that was 100% my own, bearing my own name and representing my own goals.",
+        link: "https://portfoliov1-5115.netlify.app/",
+        link2: "",
+        link3: "",
+        link4: "",
+        linkDescr: "Try it for yourself!",
+        github: "https://github.com/DanielCouperthwaite/Portfolio",
     },
     {
         name: "Bonus: Naan Breads", 
@@ -214,9 +241,10 @@ export const projectsArray = [
         link2: "",
         link3: "",
         link4: "",
-        linkDescr: "Find the recipe here",
+        linkDescr: "Find the recipe here!",
         github: "",
     },
+    
 ]
 
 
