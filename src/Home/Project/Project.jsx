@@ -78,7 +78,7 @@ export default function Project ({projects}) {
                 {imagesLoaded ? (
                     <div className='image-holder'>
                         <Carousel 
-                            adaptiveHeight='true'
+                            // adaptiveHeight='true'
                             cellAlign='center' 
                             wrapAround="true" 
                             autoplay="true" 
