@@ -208,7 +208,7 @@ export const projectsArray = [
         github: "https://github.com/DanielCouperthwaite/functions-playground",
     },
     {
-        name: "Portfolio Site", 
+        name: "Portfolio", 
         lang: "",
         images: [ps2, ps3, ps4, ps5],
         thumbnail: ps1,
