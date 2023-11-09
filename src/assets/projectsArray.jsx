@@ -53,6 +53,12 @@ import op2 from "./op2.png"
 import op3 from "./op3.png"
 import op4 from "./op4.png"
 
+import ps1 from "./ps1.png"
+import ps2 from "./ps2.png"
+import ps3 from "./ps3.png"
+import ps4 from "./ps4.png"
+import ps5 from "./ps5.png"
+
 
 export const projectsArray = [
     {
@@ -200,6 +206,28 @@ export const projectsArray = [
         link3: "",
         link4: "",
         github: "https://github.com/DanielCouperthwaite/functions-playground",
+    },
+    {
+        name: "Portfolio Site", 
+        lang: "",
+        images: [ps2, ps3, ps4, ps5],
+        thumbnail: ps1,
+        descr1: "A little piece of me! Welcome to a collection of my skills and projects. Let yourself in, make yourself at home.",
+        descr2: "Built in Javascript, React and CSS, I wanted to build from my original protfolio to show off my improved skills, ambition and attention to detail.",
+        descr3Bold: "Learning from Mistakes. ",
+        descr3: "After building my original portoflio with a few Tailwind CSS templates, I was eager to create everything on my new site from scratch. I have so much more freedom this way to manipulate, change and scale elements now and in the future.",
+        // link2: "Request a Batch",
+        // link2Descr: "welll",
+        descr4Bold: "Vibrant and Dynamic.",
+        descr4: "The background is of randomised moving particles. This means, like a snowflake, it will never look exactly the same twice! After using similar technology for Number Blast, I was very excited to implement it here too.",
+        descr5Bold: "Focus on Projects. ",
+        descr5: "Now that I have spent more time working my socks off on new projects, I really wanted to focus on showing them all off together, side by side. This is especially after my original site certainly did not show off multiple projects at once.",
+        link: "https://danielcouperthwaite.tech/",
+        link2: "",
+        link3: "",
+        link4: "",
+        linkDescr: "Try it for yourself... Again!",
+        github: "https://github.com/DanielCouperthwaite/portfolio2",
     },
     {
         name: "Original Portfolio", 
