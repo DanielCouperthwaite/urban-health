@@ -14,8 +14,6 @@ export default function Project ({projects}) {
     const {chosenProject}  = useParams()
     const currentProject = projects.filter((project) => project.name === chosenProject)
 
-    console.log(currentProject)
-
     const {name, descr1, descr11, descr2, descr3Bold, descr3, descr4Bold, descr4, descr5Bold, descr5, link, linkDescr, github, link2, link2Descr, link3, link3Descr, link4, link4Descr, images} = currentProject[0]
 
 
