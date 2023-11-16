@@ -106,7 +106,7 @@ export default function Home ({projects}) {
                                     <p>Projects:</p>
                                 </div >
                                 
-                                {/* <div style={{ display: "flex", width: "80%", flexWrap: "wrap", alignItems: "center"}}> */}
+                                
                                 {projects.map((project) => {
                                                         return (
                                                             <>
@@ -120,7 +120,7 @@ export default function Home ({projects}) {
                                                             </>
                                                         )
                                                     })}
-                                {/* </div> */}
+                                
                             </div>
                         </Grow>
                     </Box>
