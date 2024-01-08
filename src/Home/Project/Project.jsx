@@ -116,8 +116,14 @@ export default function Project ({projects}) {
                                 <div>
                                     {link === "" ? null : <a href={link} target="blank" ><button className='project-links'>{linkDescr}</button> </a>}
                                 </div> 
-                                {link2 === "" ? null : <a href={link2} target="blank"><button className='project-links'>{link2Descr}</button> </a>}
-                                {link3 === "" ? null : <a href={link3} target="blank"><button className='project-links'>{link3Descr}</button> </a>}
+                                <div>
+                                    {link2 === "" ? null : <a href={link2} target="blank"><button className='project-links'>{link2Descr}</button> </a>}
+                                </div>
+                                <div>
+                                    {link3 === "" ? null : <a href={link3} target="blank"><button className='project-links'>{link3Descr}</button> </a>}
+                                </div>
+                                    
+                                    
                                 
                         
 
