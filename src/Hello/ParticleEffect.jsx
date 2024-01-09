@@ -23,7 +23,7 @@ export default function ParticleEffect () {
     const [particles, setParticles] = useState(true)
 
     useEffect(() => {
-      setTimeout(() => setParticles(false), 6500);
+      setTimeout(() => setParticles(false), 3500);
       
 
   }, [])

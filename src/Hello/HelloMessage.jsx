@@ -14,12 +14,12 @@ export default function HelloMessage () {
                 setTimeout(() => {
                     setGreetingOne(false) 
                 }, 3000);
-                setTimeout(() => {
-                    setGreetingTwo(true) 
-                }, 4000);
-                setTimeout(() => {
-                    setGreetingTwo(false) 
-                }, 5500);
+                // setTimeout(() => {
+                //     setGreetingTwo(true) 
+                // }, 4000);
+                // setTimeout(() => {
+                //     setGreetingTwo(false) 
+                // }, 5500);
 
             }, [])
 
