@@ -7,7 +7,10 @@ import { Box, Grow } from '@mui/material'
 import li from "../assets/linkedin.png"
 import gh from "../assets/gh.png"
 
-import name from "../assets/name.png"
+import logo from "../assets/uhLogo.jpg"
+import logo1 from "../assets/UrbanHealth1.png"
+
+import footballers from "../assets/footballers.jpg"
 
 export default function Home ({projects}) {
 
@@ -54,7 +57,7 @@ export default function Home ({projects}) {
 
                                 
                                        <div style={{marginTop: "40px", marginBottom: "40px", marginLeft: "0", marginRight: "0"}}>
-                                            <img className="name" src={name}></img>
+                                            <img className="logo" src={logo1}></img>
                                             {/* <p>Full Stack Developer</p> */}
                                        </div>    
                                 </div> 
@@ -71,7 +74,7 @@ export default function Home ({projects}) {
                             
                                         <Link to="/about">
                                             <button style={{borderTopRightRadius: "0px", borderBottomRightRadius: "0px"}} className='home-button'>
-                                                <h2>About Us</h2>
+                                                <h2>About</h2>
                                             </button>   
                                         </Link>
                         </div>
@@ -93,15 +96,21 @@ export default function Home ({projects}) {
                                         </Link>
                                 
                         </div>
+
+
+                        
                     </div>
+
+                    
                     </Grow>
                     </Box>
-                    
+
+
                     <Box>
                         <Grow in={projectLoad}>
                         <div style={{width: "100%", margin: "0", padding: "0"}}>
                                 <div className='project-titles'>
-                                    <p>Projects:</p>
+                                    <p className='whatsOn'>What's on</p>
                                 </div >
                                 
                                 
