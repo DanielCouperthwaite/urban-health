@@ -11,7 +11,7 @@ export default function Hello () {
     {useEffect(() => {
             setTimeout(() => {
                 navigate('/home')
-            }, 4000);
+            }, 10);
         }, [])}
 
     return (
@@ -19,8 +19,8 @@ export default function Hello () {
 
         
         
-        <ParticleEffect />
-        <HelloMessage />
+        {/* <ParticleEffect />
+        <HelloMessage /> */}
         
         </>
     )
