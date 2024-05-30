@@ -27,7 +27,7 @@ export default function Home ({projects}) {
     return (
         <>
           
-            <ParticleEffectHome />  
+            {/* <ParticleEffectHome />   */}
 
             
             <div>
@@ -69,30 +69,28 @@ export default function Home ({projects}) {
                         <div
                         className="options" >
                             
-                                
-                                    
                                         <Link to="/about">
                                             <button style={{borderTopRightRadius: "0px", borderBottomRightRadius: "0px"}} className='home-button'>
-                                                <h2>About Me</h2>
+                                                <h2>About Us</h2>
                                             </button>   
                                         </Link>
-                                   
-                                
-                            
                         </div>
                         
                         <div className="options">
-                            
-                                
-                                   
                                         <Link to="/tech">
-                                            <button style={{borderTopLeftRadius: "0px", borderBottomLeftRadius: "0px", borderLeft: "5px"}} className='home-button'>
-                                                <h2> Tech Skills</h2>
+                                            <button style={{borderRadius: "0px", borderLeft: "0px"}} className='home-button'>
+                                                <h2>Contact</h2>
                                             </button>   
                                         </Link>
-                                    
                                 
-                            
+                        </div>
+
+                        <div className="options">
+                                        <Link to="/tech">
+                                            <button style={{borderTopLeftRadius: "0px", borderBottomLeftRadius: "0px", borderLeft: "5px"}} className='home-button'>
+                                                <h2>Donate</h2>
+                                            </button>   
+                                        </Link>
                                 
                         </div>
                     </div>
