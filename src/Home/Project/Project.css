@@ -12,13 +12,14 @@
     margin-top: 30px;
     margin-bottom: 30px;
     max-width: 600px;
+    color: black;
 }
 
 
 
 .project-links {
-    background-color: aliceblue;
-    color: black;
+    background-color: #ff0000;
+    color: white;
     width: 80%;
     margin: auto;
     font-size: 20px;
@@ -26,6 +27,20 @@
     padding: 20px;
     max-width: 600px;
 
+}
+
+.button-text {
+    color: white;
+}
+
+.back-button {
+    background-color: white;
+    border: 0px;
+}
+
+.back-button-text {
+    font-size: 2rem;
+    color:#ff0000;
 }
 
 .image-holder {
@@ -73,5 +88,5 @@
     width: auto;
     font-size: 0.8em;
     height: auto;
-    color:rgb(242, 170, 221);
+    color:rgb(255, 0, 0);
 }

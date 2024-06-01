@@ -48,18 +48,20 @@ export default function Project ({projects}) {
     return (
         <>
 
-            <ParticleEffectProject />
+            {/* <ParticleEffectProject /> */}
 
             <Box>
                 <Grow in={loadOne}>
         
             <div className='project-page'>
                 <div className='social-holder' style={{marginRight: "10px"}}>
-                    <Link to="/home">
-                                                
-                        <p>{"x"}</p>
-                                                
-                    </Link>
+                    
+                        <Link to="/">
+                            <button className='back-button'>                        
+                                <p className='back-button-text' >{" < "}</p>
+                            </button>                        
+                        </Link>
+                    
                 </div> 
 
                 
@@ -137,7 +139,7 @@ export default function Project ({projects}) {
                                 <div>
                                         <Link to="/">
                                             <button style={{width: "200px"}}>
-                                                <p>Back</p>
+                                                <p className='button-text'>Back</p>
                                             </button>   
                                         </Link>
                                 </div>
