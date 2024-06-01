@@ -1,71 +1,12 @@
-import be1 from "./be1.png"
-import be2 from "./be2.png"
-import be3 from "./be3.png"
-import be4 from "./be4.png"
 
-import fp1 from "./fp1.png"
-import fp2 from "./fp2.png"
-import fp3 from "./fp3.png"
-import fp4 from "./fp4.png"
-import fp5 from "./fp5.png"
-
-import nb1 from "./nb1.png"
-import nb2 from "./nb2.png"
-import nb3 from "./nb3.png"
-import nb4 from "./nb4.png"
-import nb5 from "./nb5.png"
-import nb6 from "./nb6.png"
-import nb7 from "./nb7.png"
-
-import won1 from "./won1.png"
-import won2 from "../assets/won2.png"
-import won3 from "./won3.png"
-import won4 from "./won4.png"
-import won5 from "./won5.png"
-import won6 from "./won6.png"
-
-import jn1 from "./jn1.png"
-import jn2 from "./jn2.png"
-import jn3 from "./jn3.png"
-import jn4 from "./jn4.png"
-import jn5 from "./jn5.png"
-import jn6 from "./jn6.png"
-
-import gs1 from "./gs1.png"
-import gs2 from "./gs2.png"
-import gs3 from "./gs3.png"
-import gs4 from "./gs4.png"
-import gs5 from "./gs5.png"
-
-import naan1 from "./naan1.png"
-import naan2 from "./naan2.png"
-
-import lb1 from "./lb1.png"
-import lb2 from "./lb2.png"
-import lb3 from "./lb3.png"
-import lb4 from "./lb4.png"
-import lb5 from "./lb5.png"
-import lb6 from "./lb6.png"
-import lb7 from "./lb7.png"
-
-import op1 from "./op1.png"
-import op2 from "./op2.png"
-import op3 from "./op3.png"
-import op4 from "./op4.png"
-
-import ps1 from "./ps1.png"
-import ps2 from "./ps2.png"
-import ps3 from "./ps3.png"
-import ps4 from "./ps4.png"
-import ps5 from "./ps5.png"
 
 
 export const projectsArray = [
     {
-        name: "Number Blast", 
+        name: "The Footy Social", 
         // lang: "Javascript, React",
-        images: [nb2, nb3, nb4, nb5, nb6, nb7],
-        thumbnail: nb1,
+        images: [],
+        thumbnail: "",
         descr1: "Welcome to number Blast, a reaction based number game designed to test your speed against the clock!",
         descr2: "Built in Javascript with React and Firebase, Number Blast offers a fun and frantic gaming experience to challenge you and your friends! How fast are you under pressure?",
         descr3Bold: "States of Play.",
@@ -82,10 +23,10 @@ export const projectsArray = [
         github: "https://github.com/DanielCouperthwaite/number-blast",
     },
     {
-        name: "The Guitar Shop", 
+        name: "Coffee Mornings", 
         lang: "",
-        images: [gs2, gs3, gs4, gs5],
-        thumbnail: gs1,
+        images: [],
+        thumbnail: "",
         descr1: "Welcome to The Guitar Shop, a simple website to highlight stock details available from different locations.",
         descr2: "Built in C# with ASP .NET and Bootstrap CSS, The Guitar Shop offers a frontend source of information for guitar availability, locations and descriptions.",
         descr3Bold: "Built for Scalability. ",
@@ -102,10 +43,10 @@ export const projectsArray = [
         github: "https://github.com/DanielCouperthwaite/guitar-shop",
     },
     {
-        name: "Love Birds", 
+        name: "Project3", 
         lang: "",
-        images: [lb2, lb3, lb4, lb5, lb6, lb7],
-        thumbnail: lb1,
+        images: [],
+        thumbnail: "",
         descr1: "Built as final project of the Northcoders Bootcamp, Love Birds is a fun and interactive application designed to keep the spark in long distance relationships.",
         descr2: "Built in Typescript with Firebase, React Native and Tailwind CSS, Love Birds allows users to send images, videos and more to their loved ones. Upon receiving their message, users must answer a quiz question or play a game to 'hatch their egg' and receive their prize.",
         descr3Bold: "Built for complexity. ",
@@ -122,10 +63,10 @@ export const projectsArray = [
         github: "https://github.com/DanielCouperthwaite/love-birds",
     },
     {
-        name: "Just News", 
+        name: "Project4", 
         lang: "",
-        images: [jn2, jn3, jn4, jn5, jn6],
-        thumbnail: jn1,
+        images: [],
+        thumbnail: "",
         descr1: "What is worse than sifting through ad after ad in search of the headlines? Eurgh! There has to be a better way! How about a site for those wanting articles in a simple format?",
         descr11: "Just News provides Just that, Just when you need it, Just about!",
         descr2: "Built in Javascript with React, Vite and CSS, Just News requests information from the NC_News API and renders articles by topic... Or in a great big list if that's more your thing. We don't judge here.",
@@ -143,10 +84,10 @@ export const projectsArray = [
         github: "https://github.com/DanielCouperthwaite/nc_news",
     },
     {
-        name: "Just News API", 
+        name: "Project5", 
         lang: "",
-        images: [be2, be3, be4],
-        thumbnail: be1,
+        images: [],
+        thumbnail: "",
         descr1: "As pretty as they might be, some of the best sites in the world would be nowhere without a functioning server and database.",
         descr2: "Built with a PostgreSQL, Express JS and Node JS, this API serves the articles used in my Just News site. You can try it yourself with the buttons below. There is a list of all the available endpoints, or a couple of example requests already written out:",
         descr3Bold: "Tried and Tested.",
@@ -166,10 +107,10 @@ export const projectsArray = [
         github: "https://github.com/DanielCouperthwaite/NC-News-Backend-Project",
     },
     {
-        name: "WeatherOrNot", 
+        name: "Project6", 
         lang: "",
-        images: [won2, won3, won4, won5, won6],
-        thumbnail: won1,
+        images: [],
+        thumbnail: "",
         descr1: "Planning on Kayaking through Borneo? Horse-riding through Outer Mongolia? Fishing in the Amazon? Or maybe just taking the dog out and wondering if that umbrella is really necessary.", 
         descr11: "Find the weather, anywhere in the world, instantly!",
         descr2: "Fetching from a third party API, WeatherOrNot handles your search queries, fetches data, extracts the most relevant parts and converts it into a useable format. All before that first raindrop even falls!",
@@ -186,108 +127,5 @@ export const projectsArray = [
         linkDescr: "Try it for yourself!",
         github: "https://github.com/DanielCouperthwaite/WeatherOrNot",
     },
-    {
-        name: "Functions Playground", 
-        lang: "",
-        images: [fp2, fp3, fp4, fp5],
-        thumbnail: fp1,
-        descr1: "Wow, with all this coding, I wish there was a place we could relax and put the Fun back into Functions!", 
-        descr11: "Here it is, a page of simple functions displayed in React for everybody to enjoy. Be sure to check back for updates!",
-        descr2: "Built in React, Functions playground imports util functions in from their own files, accepts user input and responds with appropriate feedback from the functions themselves. (Plus a little extra error handling for even more fun!)",
-        descr3Bold: "Test Driven Development.",
-        descr3: "Each function tested to ensure correct useage by themselves, then reviewed all over again to make sure they work happily away in the playground too!",
-        descr4Bold: "Reuseable Components.",
-        descr4: "Built with smaller, reuseable functions ready to accomodate any more friendly functions that may join in the fun in future.",
-        descr5Bold: "",
-        descr5: "",
-        linkDescr: "Try it for yourself!",
-        link: "https://functionsplayground7117.netlify.app/",
-        link2: "",
-        link3: "",
-        link4: "",
-        github: "https://github.com/DanielCouperthwaite/functions-playground",
-    },
-    {
-        name: "Portfolio", 
-        lang: "",
-        images: [ps2, ps3, ps4, ps5],
-        thumbnail: ps1,
-        descr1: "A little piece of me! Welcome to a collection of my skills and projects. Let yourself in, make yourself at home.",
-        descr2: "Built in Javascript, React and CSS, I wanted to build from my original protfolio to show off my improved skills, ambition and attention to detail.",
-        descr3Bold: "Learning from Mistakes. ",
-        descr3: "After building my original portoflio with a few Tailwind CSS templates, I was eager to create everything on my new site from scratch. I have so much more freedom this way to manipulate, change and scale elements now and in the future.",
-        // link2: "Request a Batch",
-        // link2Descr: "welll",
-        descr4Bold: "Vibrant and Dynamic.",
-        descr4: "The background is of randomised moving particles. This means, like a snowflake, it will never look exactly the same twice! After using similar technology for Number Blast, I was very excited to implement it here too.",
-        descr5Bold: "Focus on Projects. ",
-        descr5: "Now that I have spent more time working my socks off on new projects, I really wanted to focus on showing them all off together, side by side. This is especially after my original site certainly did not show off multiple projects at once.",
-        link: "https://danielcouperthwaite.tech/",
-        link2: "",
-        link3: "",
-        link4: "",
-        linkDescr: "Try it for yourself... Again!",
-        github: "https://github.com/DanielCouperthwaite/portfolio2",
-    },
-    {
-        name: "Original Portfolio", 
-        lang: "",
-        images: [op2, op3, op4],
-        thumbnail: op1,
-        descr1: "My first stab at building my own little corner of the web. Flawed but necessary, here is my first portfolio site",
-        descr2: "Built in Javascript, React and Tailwind CSS in July 2023, I wanted a simple, single page site to showcase some of my skills and projects up to that point.",
-        descr3Bold: "Learning from Mistakes. ",
-        descr3: "It is easy to see at just a glance some of the issues I had related to layout, design and mobile to tablet to web size transitions. All of which I have learned from and implemented in this new site.",
-        // link2: "Request a Batch",
-        // link2Descr: "welll",
-        descr4Bold: "Static and Unmoving. ",
-        descr4: "Single images to represent whole projects. A single page lacking routing and complex design elements. Tailwind CSS written exclusively inline without any resused components or classes. ",
-        descr5Bold: "My beautiful Failure. ",
-        descr5: "I had a good understanding that this site would need to be rebuilt fairly soon after first hosting it. Sometimes it really is better to wipe the slate clean and start again, rather than attempting to fix code built from a flawed plan. I am no less proud though, of the first project that was 100% my own, bearing my own name and representing my own goals.",
-        link: "https://portfoliov1-5115.netlify.app/",
-        link2: "",
-        link3: "",
-        link4: "",
-        linkDescr: "Try it for yourself!",
-        github: "https://github.com/DanielCouperthwaite/Portfolio",
-    },
-    {
-        name: "Bonus: Naan Breads", 
-        lang: "",
-        images: [naan1, naan2],
-        thumbnail: naan1,
-        descr1: "Nothing at all to do with development I'm afraid, but who doesn't like a little baking between debugging!",
-        descr2: "Here are a few I made earlier with strong white flour, all natural yoghurt and just a little golden caster sugar. Carefully kneaded, rolled and dry fried for a soft, elastic consistency.",
-        descr3Bold: "Fresh and Delicious. ",
-        descr3: "Piping hot and straight from the oven! Right on time and easy to digest, just like all of my code!",
-        // link2: "Request a Batch",
-        // link2Descr: "welll",
-        descr4Bold: "Constant Error Testing. ",
-        descr4: "Look, I will be honest, I did set off the smoke alarm when I made these last time. Lesson learned!",
-        descr5: "",
-        link: "https://www.bbcgoodfood.com/recipes/naan-bread",
-        link2: "",
-        link3: "",
-        link4: "",
-        linkDescr: "Find the recipe here!",
-        github: "",
-    },
     
 ]
-
-
-// {
-    //     name: "", 
-    //     lang: "",
-    //     descr1: "",
-    //     descr2: "",
-    //     descr3Bold: "",
-    //     descr3: "",
-    //     descr4Bold: "",
-    //     descr4: "",
-    //     descr5Bold: "",
-    //     descr5: "",
-    //     link: "",
-    //     linkDescr: "",
-    //     github: "",
-    // },

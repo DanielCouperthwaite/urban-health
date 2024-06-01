@@ -4,8 +4,7 @@ import Carousel, { NextButton } from "nuka-carousel"
 import { useParams, Link } from 'react-router-dom'
 import './Project.css'
 
-import gh from "../../assets/gh.png"
-import ParticleEffectProject from './ParticleEffectProject'
+// import ParticleEffectProject from './ParticleEffectProject'
 import { Box, Grow } from '@mui/material'
 
 
@@ -75,7 +74,7 @@ export default function Project ({projects}) {
                 <div>
                     
                     
-                {imagesLoaded ? (
+                {/* {imagesLoaded ? (
                     <div className='image-holder'>
                         <Carousel 
                             // adaptiveHeight='true'
@@ -97,7 +96,7 @@ export default function Project ({projects}) {
                     </div>
                     ) : (
                         <div>Loading...</div>
-                    )}
+                    )} */}
                     </div>
                     </div>
 
@@ -112,9 +111,6 @@ export default function Project ({projects}) {
                                 <div className='project-info'>
                                     <p>{descr2}</p>
                                 </div>    
-                                <div>
-                                    {github === "" ? null : <a href={github} target="blank"><button className='project-links'>Find the repository on <img src={gh} style={{height: "18px"}}/></button></a>}
-                                </div>
                                 <div>
                                     {link === "" ? null : <a href={link} target="blank" ><button className='project-links'>{linkDescr}</button> </a>}
                                 </div> 

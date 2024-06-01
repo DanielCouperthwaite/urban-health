@@ -3,8 +3,9 @@ import './About.css'
 import { Link } from 'react-router-dom'
 import { Box, Grow } from '@mui/material'
 
-import face from "../../assets/face.png"
 import ParticleEffectAbout from './ParticleEffectAbout'
+
+import { aboutData } from '../../assets/aboutData'
 
 
 export default function About () {
@@ -39,20 +40,45 @@ export default function About () {
                                         </div>  
                     
                         
-                        <h3 style={{marginTop: "-20px"}}>Hello!</h3>
-                        <p>I'm Daniel Couperthwaite, a full stack developer based in Manchester.</p>
-                        <img className='face' src={face} alt="Daniel smiling for the camera"/>
+                        <h3 style={{marginTop: "-20px"}}>{aboutData.title}</h3>
+                        <p>{aboutData.descr}</p>
+                        <p>{aboutData.descr1p5}</p>
+                        <h2>***nice image here***</h2>
+                        <div>
+                            <h2>Meet the Directors</h2>
+                            <div style={{display: "flex", textAlign: "center"}}>
+
+                            
+                                <div style={{width: "33%"}}>
+                                    <img className='face' src={aboutData.images[0]} alt=""/>
+                                    <p className='name'>Daniel Hogan</p>
+                                    <p className='dir-descr'>Mental Health Nurse</p>
+                                </div>
+                                <div style={{width: "33%"}}>
+                                    <img className='face' src={aboutData.images[1]} alt=""/>
+                                    <p className='name'>Christine Maxwell</p>
+                                    <p className='dir-descr'>Mental Health Nurse</p>
+                                </div>
+                                <div style={{width: "33%"}}>
+                                    <img className='face' src={aboutData.images[2]} alt=""/>
+                                    <p className='name'>Martins Okunrobo</p>
+                                    <p className='dir-descr'>Occupational Therapist</p>
+                                </div>
+                                
+                            </div>
+
+                            </div>
+                        
                     </div>
                     </Grow>    
                     <Grow in={loadTwo}>
                     <div className="about">
-                        <p>I created this site to show off some of my skills, projects, coding experience and, hopefully, a little of me as well!</p>
-                        <p>(And particle effects! Lots of particle effects!)</p>
-                        <p>I am passionate about technology and always trying to learn new skills.</p>
-                        <p>Outside of coding you can usually find me on a mountain somewhere, buried in a recipe book or trying for the thousandth time to finally play YYZ on guitar.</p>
-                        <p>So come on in. I'll put the kettle on. Make yourself at home. </p>
+                        <p>{aboutData.descr2}</p>
+                        <p>{aboutData.descr3}</p>
+                        <p>{aboutData.descr4}</p>
+                        <p>{aboutData.descr5}</p>
                     
-
+                        <h2>**ADD REFERRAL LINK**</h2>
                         <div>
                                 <Link to="/">
                                     <button style={{maxWidth: "200px"}}>

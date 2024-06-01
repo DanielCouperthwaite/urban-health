@@ -1,12 +1,32 @@
 .about {
     max-width: 700px;
-    text-align: justify-center;
+    text-align: left;
     text-justify: inter-word;
 }
 
+h3 {
+    text-align: center;
+}
+
+.directors-box {
+    border: 5px solid red;
+    border-radius: 20px;
+    padding: 15px;
+}
+
 .face {
-    width: 60%;
+    width: 85%;
     max-width: 400px;
     height: auto;
-    border-radius: 10px;
+    object-fit: fill;
+    border-radius: 100%;
+}
+
+.name {
+    font-weight: bold;
+    margin: 0px;
+}
+
+.dir-descr {
+    margin-top: 0;
 }
