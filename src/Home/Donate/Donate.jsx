@@ -58,12 +58,14 @@ export default function Donate () {
                         </div>
                         
                         <div>
-                                <Link to="/">
-                                    <button style={{maxWidth: "200px"}}>
-                                        <p>Back</p>
-                                    </button>   
-                                </Link>
+                            <div style={{textAlign: "center"}}>
+                                        <Link to="/">
+                                            <button style={{width: "200px"}}>
+                                                <p className='button-text'>Back</p>
+                                            </button>   
+                                        </Link>
                             </div>
+                        </div>
                     
                     
                     </div>

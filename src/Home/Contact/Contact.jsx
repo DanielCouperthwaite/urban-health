@@ -39,31 +39,32 @@ export default function Contact () {
                                         </div>  
                     
                         
-                        <h3 style={{marginTop: "-20px"}}>Technical Skills</h3>
-                        <p>What's a developer without their tools? Here you can see some of the tech I have experience building sites, APIs and apps with.</p>
-                        <p>This website built with Javascript, React and a little bit of love.</p>
+                        <h3 style={{marginTop: "-20px"}}>Contact</h3>
+                        <p>See below for details on where to contact us, or fill in a referral form and we will get back to you as soon as possible!</p>
                     </div>
                     </Grow>    
                     <Grow in={loadTwo}>
                     <div className="about">
                         <div className='tech-info'>
-                            <p className='tech-span'><strong>Languages: </strong></p>
-                            <p className='tech-p'>Javascript, Typescript, C#, ASP.NET</p>
-                            <p className='tech-span'><strong>Front-End:</strong></p>
-                            <p className='tech-p'>React, React Native, HTML5, CSS3, Tailwind CSS, Bootstrap CSS</p>
-                            <p className='tech-span'><strong>Back-End:</strong></p>
-                            <p className='tech-p'>Express, test driven development with Jest, seeding databases, PostgreSQL, Firebase</p>
-                            <p className='tech-span'><strong>Development:</strong></p>
-                            <p className='tech-p'>AGILE Methodologies, paired programming, working in and managing scrums, live hosting through Render and Netlify</p>
+                            <p className='tech-span'><strong>Email: </strong></p>
+                            <p className='tech-p'>example@email.com</p>
+                            <p className='tech-span'><strong>Phone:</strong></p>
+                            <p className='tech-p'>0123456789</p>
+                            <p className='tech-span'><strong>Donations:</strong></p>
+                            <p className='tech-p'>www.donations-example.com</p>
+                            <p className='tech-span'><strong>Find us on:</strong></p>
+                            <p className='tech-p'>Social Media Links Here</p>
                         </div>
                         
                         <div>
-                                <Link to="/">
-                                    <button style={{maxWidth: "200px"}}>
-                                        <p>Back</p>
-                                    </button>   
-                                </Link>
+                            <div style={{textAlign: "center"}}>
+                                        <Link to="/">
+                                            <button style={{width: "200px"}}>
+                                                <p className='button-text'>Back</p>
+                                            </button>   
+                                        </Link>
                             </div>
+                        </div>
                     
                     
                     </div>
