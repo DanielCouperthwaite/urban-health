@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './Tech.css'
+import './Donate.css'
 import { Link } from 'react-router-dom'
 import { Box, Grow } from '@mui/material'
 
@@ -7,7 +7,7 @@ import face from "../../assets/face.png"
 import ParticleEffectAbout from '../About/ParticleEffectAbout'
 
 
-export default function Tech () {
+export default function Donate () {
 
     const [loadOne, setLoadOne] =useState(false)
     const [loadTwo, setLoadTwo] =useState(false)
@@ -24,14 +24,14 @@ export default function Tech () {
     return (
         <>
 
-            <ParticleEffectAbout />
+            {/* <ParticleEffectAbout /> */}
 
             <Box>
                 <Grow in={loadOne}>
                     <div className="about">
                     
                                         <div className='social-holder' style={{marginRight: "10px"}}>
-                                        <Link to="/home">
+                                        <Link to="/">
                                             
                                                 <p>{"x"}</p>
                                             
@@ -58,7 +58,7 @@ export default function Tech () {
                         </div>
                         
                         <div>
-                                <Link to="/home">
+                                <Link to="/">
                                     <button style={{maxWidth: "200px"}}>
                                         <p>Back</p>
                                     </button>   

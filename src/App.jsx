@@ -5,7 +5,8 @@ import Hello from './Hello/Hello'
 import Home from './Home/Home'
 import About from "./Home/About/About";
 import Project from "./Home/Project/Project";
-import Tech from "./Home/Tech/Tech";
+import Donate from "./Home/Donate/Donate";
+import Contact from "./Home/Contact/Contact";
 import {projectsArray} from "./assets/projectsArray";
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
           {/* <Route path="/" element={<Hello />} /> */}
           <Route path="/" element={<Home projects={projectsArray}/>} />
           <Route path="/about" element={<About />} />
-          <Route path="/tech" element={<Tech />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/donate" element={<Donate />} />
           <Route path="/project/:chosenProject" element={<Project projects={projectsArray}/>} />
         </Routes>
         

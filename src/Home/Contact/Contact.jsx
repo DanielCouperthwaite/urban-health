@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react'
-import './About.css'
+import './Contact.css'
 import { Link } from 'react-router-dom'
 import { Box, Grow } from '@mui/material'
 
 import face from "../../assets/face.png"
-import ParticleEffectAbout from './ParticleEffectAbout'
+import ParticleEffectAbout from '../About/ParticleEffectAbout'
 
 
-export default function About () {
+export default function Contact () {
 
     const [loadOne, setLoadOne] =useState(false)
     const [loadTwo, setLoadTwo] =useState(false)
@@ -39,20 +39,24 @@ export default function About () {
                                         </div>  
                     
                         
-                        <h3 style={{marginTop: "-20px"}}>Hello!</h3>
-                        <p>I'm Daniel Couperthwaite, a full stack developer based in Manchester.</p>
-                        <img className='face' src={face} alt="Daniel smiling for the camera"/>
+                        <h3 style={{marginTop: "-20px"}}>Technical Skills</h3>
+                        <p>What's a developer without their tools? Here you can see some of the tech I have experience building sites, APIs and apps with.</p>
+                        <p>This website built with Javascript, React and a little bit of love.</p>
                     </div>
                     </Grow>    
                     <Grow in={loadTwo}>
                     <div className="about">
-                        <p>I created this site to show off some of my skills, projects, coding experience and, hopefully, a little of me as well!</p>
-                        <p>(And particle effects! Lots of particle effects!)</p>
-                        <p>I am passionate about technology and always trying to learn new skills.</p>
-                        <p>Outside of coding you can usually find me on a mountain somewhere, buried in a recipe book or trying for the thousandth time to finally play YYZ on guitar.</p>
-                        <p>So come on in. I'll put the kettle on. Make yourself at home. </p>
-                    
-
+                        <div className='tech-info'>
+                            <p className='tech-span'><strong>Languages: </strong></p>
+                            <p className='tech-p'>Javascript, Typescript, C#, ASP.NET</p>
+                            <p className='tech-span'><strong>Front-End:</strong></p>
+                            <p className='tech-p'>React, React Native, HTML5, CSS3, Tailwind CSS, Bootstrap CSS</p>
+                            <p className='tech-span'><strong>Back-End:</strong></p>
+                            <p className='tech-p'>Express, test driven development with Jest, seeding databases, PostgreSQL, Firebase</p>
+                            <p className='tech-span'><strong>Development:</strong></p>
+                            <p className='tech-p'>AGILE Methodologies, paired programming, working in and managing scrums, live hosting through Render and Netlify</p>
+                        </div>
+                        
                         <div>
                                 <Link to="/">
                                     <button style={{maxWidth: "200px"}}>

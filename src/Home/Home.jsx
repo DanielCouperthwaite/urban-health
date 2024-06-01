@@ -80,7 +80,7 @@ export default function Home ({projects}) {
                         </div>
                         
                         <div className="options">
-                                        <Link to="/tech">
+                                        <Link to="/contact">
                                             <button style={{borderRadius: "0px", borderLeft: "0px"}} className='home-button'>
                                                 <h2>Contact</h2>
                                             </button>   
@@ -89,7 +89,7 @@ export default function Home ({projects}) {
                         </div>
 
                         <div className="options">
-                                        <Link to="/tech">
+                                        <Link to="/donate">
                                             <button style={{borderTopLeftRadius: "0px", borderBottomLeftRadius: "0px", borderLeft: "5px"}} className='home-button'>
                                                 <h2>Donate</h2>
                                             </button>   
