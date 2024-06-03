@@ -1,5 +1,5 @@
 .project-page {
-    width: 80%;
+    width: 100%;
     margin: auto;
     min-width: 300px;
 }
@@ -13,6 +13,16 @@
     margin-bottom: 30px;
     max-width: 600px;
     color: black;
+}
+
+ul {
+    margin-top: 0;
+    padding: 10px;
+}
+
+li {
+    padding: 0px 10px;
+    font-size: 20px;
 }
 
 

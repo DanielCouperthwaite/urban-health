@@ -4,10 +4,11 @@ import './Home.css'
 import ParticleEffectHome from './ParticleEffectHome'
 import { Box, Grow } from '@mui/material'
 
-// import li from "../assets/linkedin.png"
-
-import logo from "../assets/uhLogo.jpg"
 import logo1 from "../assets/UrbanHealth1.png"
+
+import fb from "../assets/facebook-logo.png"
+import ig from "../assets/instagram-logo.png"
+import tw from "../assets/twitter-logo.png"
 
 import footballers from "../assets/footballers.jpg"
 
@@ -40,18 +41,23 @@ export default function Home ({projects}) {
                             <div>
                         
                         
-                                        {/* <div className='social-holder'>
-                                            <a  href="https://www.linkedin.com/in/daniel-couperthwaite-209290139/" target='_blank'>
+                                        <div className='social-holder'>
+                                            <a  href="https://www.facebook.com/share/JNqew8PHdicTvR1N/?mibextid=LQQJ4d" target='_blank'>
                                                 <button className="social-link">
-                                                    <img src={li} alt="linked in logo" style={{width: "60%", height: "auto"}}></img>
+                                                    <img src={fb} alt="Facebook logo" style={{width: "60%", height: "auto"}}></img>
                                                 </button>
                                             </a>
-                                            <a href="https://github.com/DanielCouperthwaite" target='_blank'>
+                                            <a href="https://www.instagram.com/urbanhealthuk2024?igsh=MWN2MGVtcTFvdW01MQ%3D%3D&utm_source=qr" target='_blank'>
                                                 <button className="social-link">
-                                                    <img src={gh} alt="github logo" style={{width: "60%", height: "auto"}}></img>
+                                                    <img src={ig} alt="Instagram Logo" style={{width: "60%", height: "auto"}}></img>
                                                 </button>
                                             </a>
-                                        </div>     */}
+                                            <a href="https://twitter.com/UrbanHealthUK24" target='_blank'>
+                                                <button className="social-link">
+                                                    <img src={tw} alt="Twitter Logo" style={{width: "60%", height: "auto"}}></img>
+                                                </button>
+                                            </a>
+                                        </div>    
 
 
                                 

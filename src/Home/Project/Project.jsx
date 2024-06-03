@@ -13,7 +13,7 @@ export default function Project ({projects}) {
     const {chosenProject}  = useParams()
     const currentProject = projects.filter((project) => project.name === chosenProject)
 
-    const {name, descr1, descr11, descr2, descr3Bold, descr3, descr4Bold, descr4, descr5Bold, descr5, link, linkDescr, github, link2, link2Descr, link3, link3Descr, link4, link4Descr, images} = currentProject[0]
+    const {name, descr1, descr11, descr2, descr3Bold, descr3, descr4Bold, descr4, bullets, descr5Bold, descr5, link, linkDescr, github, link2, link2Descr, link3, link3Descr, link4, link4Descr, images} = currentProject[0]
 
 
     const [loadOne, setLoadOne] = useState(false)
@@ -68,8 +68,7 @@ export default function Project ({projects}) {
                 
                 <h3 style={{marginTop: "-20px"}}>{name}</h3>
                 <div className='project-info'>
-                    <p >{descr1}</p>
-                    <p>{descr11}</p>
+                    <p>{descr1}</p>
                 </div>
                 <div>
                     
@@ -126,9 +125,10 @@ export default function Project ({projects}) {
                         
 
                             <div className='project-info'>
-                                {descr3 === "" ? null : <p><strong>{descr3Bold}</strong>{" " +descr3}</p>}
-                                {descr4 === "" ? null : <p><strong>{descr4Bold}</strong>{" " +descr4}</p>}
-                                {descr5 === "" ? null : <p><strong>{descr5Bold}</strong>{" " +descr5}</p>}
+                                {descr3 === "" ? null : <p>{descr3}</p>}
+                                {descr4 === "" ? null : <p>{descr4}</p>}
+                                {bullets.length < 0 ? null : <ul>{bullets.map(bulletItem => {return <li>{bulletItem}</li>})}</ul>}
+                                {descr5 === "" ? null : <p>{descr5}</p>}
                                 
                             </div>
                                 {link4 === "" ? null : <a href={link4} target="blank"><button className='project-links'>{link4Descr}</button> </a>}
