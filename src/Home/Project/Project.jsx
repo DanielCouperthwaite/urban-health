@@ -73,7 +73,7 @@ export default function Project ({projects}) {
                 <div>
                     
                     
-                {/* {imagesLoaded ? (
+                {imagesLoaded ? (
                     <div className='image-holder'>
                         <Carousel 
                             // adaptiveHeight='true'
@@ -95,7 +95,7 @@ export default function Project ({projects}) {
                     </div>
                     ) : (
                         <div>Loading...</div>
-                    )} */}
+                    )}
                     </div>
                     </div>
 

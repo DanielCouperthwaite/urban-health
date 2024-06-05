@@ -10,6 +10,8 @@ import fb from "../assets/facebook-logo.png"
 import ig from "../assets/instagram-logo.png"
 import tw from "../assets/twitter-logo.png"
 
+import bg from "../assets/bg.jpg"
+
 import footballers from "../assets/footballers.jpg"
 
 export default function Home ({projects}) {
