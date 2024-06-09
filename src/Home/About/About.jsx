@@ -8,7 +8,7 @@ import ParticleEffectAbout from './ParticleEffectAbout'
 import { aboutData } from '../../assets/aboutData'
 
 
-export default function About () {
+export default function About ({bg, setBg}) {
 
     const [loadOne, setLoadOne] =useState(false)
     const [loadTwo, setLoadTwo] =useState(false)
@@ -23,7 +23,8 @@ export default function About () {
         }, [])
 
     return (
-        <>
+        <div className='about-page'>
+        <div className='about' style={{backgroundImage: bg}}>
 
             {/* <ParticleEffectAbout /> */}
 
@@ -93,6 +94,7 @@ export default function About () {
                     </div>
                 </Grow> 
             </Box>    
-        </>
+        </div>
+        </div>
     )
 }

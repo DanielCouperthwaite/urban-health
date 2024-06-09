@@ -1,7 +1,13 @@
 body {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     place-items: center;
+    
+    /* background-image: url("../assets/bg1.png"); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
   }
 
 h2 {
@@ -24,7 +30,7 @@ p {
 .option-holder {
     display: flex; 
     margin: auto;
-    width: 100%;
+    width: 90%;
 }
 
 .options {
@@ -102,10 +108,11 @@ p {
 }
 
 .logo {
-    width: 85%;
+    width: 35%;
     height: auto;
     min-width: 240px;
-    max-width: 500px;
+    max-width: 400px;
+    border-radius: 2000px;
 }
 
 .project-titles {
@@ -120,3 +127,16 @@ p {
     color:black;
     font-size: 1.7rem;
 }
+
+@media only screen and (max-width: 1500px) {
+    body {
+      background-size: 100rem;
+
+    }
+  }
+
+/* @media only screen and (min-width: 1700px) {
+    body {
+      background-size: 100%;
+  }
+} */

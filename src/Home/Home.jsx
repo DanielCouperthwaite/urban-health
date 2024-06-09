@@ -4,25 +4,33 @@ import './Home.css'
 import ParticleEffectHome from './ParticleEffectHome'
 import { Box, Grow } from '@mui/material'
 
+import logoCircle from "../assets/uhLogo.jpg"
 import logo1 from "../assets/UrbanHealth1.png"
+import uh3 from "../assets/uh3.png"
+
+import bg1 from "../assets/bg1.png"
 
 import fb from "../assets/facebook-logo.png"
 import ig from "../assets/instagram-logo.png"
 import tw from "../assets/twitter-logo.png"
 
-import bg from "../assets/bg.jpg"
+import background from "../assets/bg.jpg"
 
 import footballers from "../assets/footballers.jpg"
 
-export default function Home ({projects}) {
+export default function Home ({projects, bg, setBg}) {
 
     const [aboutLoad, setAboutLoad] = useState(false)
     const [techLoad, setTechLoad] = useState(false)
     const [projectLoad, setProjectLoad] = useState(false)
 
+    const [backgroundDisplayed, setbackgroundDisplayed] = useState("")
+
     useEffect(() => {
 
         window.scrollTo(0, 0)
+
+        setbackgroundDisplayed(bg)
 
         setTimeout(() => setAboutLoad(true) , 500);
         setTimeout(() => setTechLoad(true) , 1000);
@@ -35,7 +43,8 @@ export default function Home ({projects}) {
             {/* <ParticleEffectHome />   */}
 
             
-            <div>
+            <body style={{backgroundImage: "url(" + bg+")"}}>
+
                 <div>
                    <Box>
                         <Grow in={aboutLoad}>
@@ -63,8 +72,8 @@ export default function Home ({projects}) {
 
 
                                 
-                                       <div style={{marginTop: "40px", marginBottom: "40px", marginLeft: "0", marginRight: "0"}}>
-                                            <img className="logo" src={logo1}></img>
+                                       <div style={{marginTop: "30px", marginBottom: "30px", marginLeft: "0", marginRight: "0"}}>
+                                            <img className="logo" src={logoCircle}></img>
                                             {/* <p>Full Stack Developer</p> */}
                                        </div>    
                                 </div> 
@@ -115,7 +124,7 @@ export default function Home ({projects}) {
 
                     <Box>
                         <Grow in={projectLoad}>
-                        <div style={{width: "100%", margin: "0", padding: "0"}}>
+                        <div style={{width: "90%", margin: "0 auto", padding: "0"}}>
                                 <div className='project-titles'>
                                     <p className='whatsOn'>What's on</p>
                                 </div >
@@ -140,7 +149,7 @@ export default function Home ({projects}) {
                     </Box>
                 </div>
                 
-            </div>
+            </body>
             
         </>
     )

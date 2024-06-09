@@ -134,7 +134,7 @@ export default function Project ({projects}) {
                                 {link4 === "" ? null : <a href={link4} target="blank"><button className='project-links'>{link4Descr}</button> </a>}
                                 <div>
                                         <Link to="/">
-                                            <button style={{width: "200px"}}>
+                                            <button style={{width: "200px", marginBottom: "30px"}}>
                                                 <p className='button-text'>Back</p>
                                             </button>   
                                         </Link>

@@ -1,14 +1,14 @@
 .project-page {
-    width: 100%;
-    margin: auto;
+    width: 95%;
+    margin: 0 auto;
     min-width: 300px;
 }
 
 .project-info {
     text-align: left;
-    width: 100%;
+    width: 95%;
     min-width: 280px;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
     max-width: 600px;
@@ -33,7 +33,6 @@ li {
     width: 80%;
     margin: auto;
     font-size: 20px;
-    width: 100%;
     padding: 20px;
     max-width: 600px;
 

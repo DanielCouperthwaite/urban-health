@@ -39,23 +39,15 @@ export default function Donate () {
                                         </div>  
                     
                         
-                        <h3 style={{marginTop: "-20px"}}>Technical Skills</h3>
-                        <p>What's a developer without their tools? Here you can see some of the tech I have experience building sites, APIs and apps with.</p>
-                        <p>This website built with Javascript, React and a little bit of love.</p>
+                        <h3 style={{marginTop: "-20px"}}>Donate</h3>
+                        <p>Infor related to donation</p>
+                        <p>Donation link</p>
+
                     </div>
                     </Grow>    
                     <Grow in={loadTwo}>
                     <div className="about">
-                        <div className='tech-info'>
-                            <p className='tech-span'><strong>Languages: </strong></p>
-                            <p className='tech-p'>Javascript, Typescript, C#, ASP.NET</p>
-                            <p className='tech-span'><strong>Front-End:</strong></p>
-                            <p className='tech-p'>React, React Native, HTML5, CSS3, Tailwind CSS, Bootstrap CSS</p>
-                            <p className='tech-span'><strong>Back-End:</strong></p>
-                            <p className='tech-p'>Express, test driven development with Jest, seeding databases, PostgreSQL, Firebase</p>
-                            <p className='tech-span'><strong>Development:</strong></p>
-                            <p className='tech-p'>AGILE Methodologies, paired programming, working in and managing scrums, live hosting through Render and Netlify</p>
-                        </div>
+
                         
                         <div>
                             <div style={{textAlign: "center"}}>

@@ -1,7 +1,20 @@
+.about-page {
+   
+    margin: 0 auto;
+    min-width: 300px;
+}
+
+
 .about {
     max-width: 700px;
+    width: 95%;
+    padding: 2rem;
     text-align: left;
-    text-justify: inter-word;
+    margin: auto;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    min-width: 200px;
 }
 
 h3 {
