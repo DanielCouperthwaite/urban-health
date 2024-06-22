@@ -12,35 +12,35 @@ export default function Contact () {
     const [loadOne, setLoadOne] =useState(false)
     const [loadTwo, setLoadTwo] =useState(false)
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    // const [name, setName] = useState('');
+    // const [email, setEmail] = useState('');
+    // const [message, setMessage] = useState('');
 
-    function encode(data) {
-        return Object.keys(data)
-            .map(
-                (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-            )
-            .join("&");
-    }
+    // function encode(data) {
+    //     return Object.keys(data)
+    //         .map(
+    //             (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+    //         )
+    //         .join("&");
+    // }
 
-    function handleSubmit(event) {
-        event.preventDefault();
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", name, email, message }),
-        })
-            .then(() => {
-                setEmail("")
-                setMessage("")
-                setName("")
-            })
-            .then(() => {
-                alert("Message Sent!")
-            })
-            .catch((error) => alert(error));
-    }
+    // function handleSubmit(event) {
+    //     event.preventDefault();
+    //     fetch("/", {
+    //         method: "POST",
+    //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    //         body: encode({ "form-name": "contact", name, email, message }),
+    //     })
+    //         .then(() => {
+    //             setEmail("")
+    //             setMessage("")
+    //             setName("")
+    //         })
+    //         .then(() => {
+    //             alert("Message Sent!")
+    //         })
+    //         .catch((error) => alert(error));
+    // }
 
 
     useEffect(() => {
@@ -78,7 +78,7 @@ export default function Contact () {
                     <div className="about">
 
 
-                        <form
+                        {/* <form
                             netlify
                             name="contact"
                             onSubmit={handleSubmit}
@@ -122,9 +122,28 @@ export default function Contact () {
                                 
                             </div>
                             <button type="submit">Submit</button>
+                        </form> */}
+
+                        <form name="contact" method="POST" netlify>
+                            <p>
+                                <label>Your Name: <input type="text" name="name" /></label>
+                            </p>
+                            <p>
+                                <label>Your Email: <input type="email" name="email" /></label>
+                            </p>
+                            <p>
+                                <label>Your Role: <select name="role[]" multiple>
+                                    <option value="leader">Leader</option>
+                                    <option value="follower">Follower</option>
+                                </select></label>
+                            </p>
+                            <p>
+                                <label>Message: <textarea name="message"></textarea></label>
+                            </p>
+                            <p>
+                                <button type="submit">Send</button>
+                            </p>
                         </form>
-
-
 
 
                         <div>
