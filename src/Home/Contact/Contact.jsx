@@ -85,20 +85,20 @@ export default function Contact () {
                             className="">
                             <h2 >Contact</h2>
                             <div>
-                                <label htmlFor="name"><p>Name</p>
+                                <label htmlFor="name">Name</label>
                                 <input
                                     type="text"
                                     id="name"
                                     name="name"
                                     value={name}
-                                    className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    
                                     onChange={(event) => setName(event.target.value)}
                                 />
-                                </label>
+                                
                             </div>
-                            <div className="relative mb-4">
+                            <div >
                                 <label htmlFor="email">
-                                    <p>Email</p>
+                                    Email</label>
                                 
                                 <input
                                     type="email"
@@ -108,18 +108,18 @@ export default function Contact () {
                                     className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                                     onChange={(event) => setEmail(event.target.value)}
                                 />
-                                </label>
+                                
                             </div>
                             <div>
                                 <label htmlFor="message">
-                                    <p>Message</p>
+                                    Message</label>
                                 <textarea
                                     id="message"
                                     name="message"
                                     value={message}
                                     onChange={(event) => setMessage(event.target.value)}
                                 />
-                                </label>
+                                
                             </div>
                             <button type="submit">Submit</button>
                         </form>
