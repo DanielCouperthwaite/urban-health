@@ -79,7 +79,7 @@ export default function Contact () {
 
 
                         <form
-                            netlify
+                            netlify="true"
                             name="contact"
                             onSubmit={handleSubmit}
                             className="">
