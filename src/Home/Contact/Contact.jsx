@@ -12,35 +12,35 @@ export default function Contact () {
     const [loadOne, setLoadOne] =useState(false)
     const [loadTwo, setLoadTwo] =useState(false)
 
-    // const [name, setName] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [message, setMessage] = useState('');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
 
-    // function encode(data) {
-    //     return Object.keys(data)
-    //         .map(
-    //             (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-    //         )
-    //         .join("&");
-    // }
+    function encode(data) {
+        return Object.keys(data)
+            .map(
+                (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+            )
+            .join("&");
+    }
 
-    // function handleSubmit(event) {
-    //     event.preventDefault();
-    //     fetch("/", {
-    //         method: "POST",
-    //         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //         body: encode({ "form-name": "contact", name, email, message }),
-    //     })
-    //         .then(() => {
-    //             setEmail("")
-    //             setMessage("")
-    //             setName("")
-    //         })
-    //         .then(() => {
-    //             alert("Message Sent!")
-    //         })
-    //         .catch((error) => alert(error));
-    // }
+    function handleSubmit(event) {
+        event.preventDefault();
+        fetch("/contact", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", name, email, message }),
+        })
+            .then(() => {
+                setEmail("")
+                setMessage("")
+                setName("")
+            })
+            .then(() => {
+                alert("Message Sent!")
+            })
+            .catch((error) => alert(error));
+    }
 
 
     useEffect(() => {
@@ -78,8 +78,8 @@ export default function Contact () {
                     <div className="about">
 
 
-                        {/* <form
-                            netlify
+                        <form
+                            data-netlify="true"
                             name="contact"
                             onSubmit={handleSubmit}
                         >
@@ -122,9 +122,9 @@ export default function Contact () {
                                 
                             </div>
                             <button type="submit">Submit</button>
-                        </form> */}
+                        </form>
 
-                        <form name="contact" method="POST" netlify>
+                        {/* <form name="contact" method="POST" netlify>
                             <p>
                                 <label>Your Name: <input type="text" name="name" /></label>
                             </p>
@@ -143,7 +143,7 @@ export default function Contact () {
                             <p>
                                 <button type="submit">Send</button>
                             </p>
-                        </form>
+                        </form> */}
 
 
                         <div>
