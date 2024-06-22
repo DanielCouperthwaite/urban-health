@@ -104,8 +104,17 @@ export default function Home ({projects, bg, setBg}) {
                                 
                         </div>
 
+                        {/* <div className="options">
+                                        <Link to="/contact">
+                                            <button style={{borderRadius: "0px", borderLeft: "0px"}} className='home-button'>
+                                                <h2>Referral</h2>
+                                            </button>   
+                                        </Link>
+                                
+                        </div> */}
+
                         <div className="options">
-                                        <Link to="/donate">
+                                        <Link target="_blank" to="https://www.paypal.com/donate/?hosted_button_id=YHVX9U6QGKYPN">
                                             <button style={{borderTopLeftRadius: "0px", borderBottomLeftRadius: "0px", borderLeft: "5px"}} className='home-button'>
                                                 <h2>Donate</h2>
                                             </button>   
