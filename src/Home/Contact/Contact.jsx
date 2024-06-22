@@ -82,7 +82,7 @@ export default function Contact () {
                             netlify
                             name="contact"
                             onSubmit={handleSubmit}
-                            className="">
+                        >
                             <h2 >Contact</h2>
                             <div>
                                 <label htmlFor="name">Name</label>
@@ -105,7 +105,7 @@ export default function Contact () {
                                     id="email"
                                     name="email"
                                     value={email}
-                                    className="w-full bg-white rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-black py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                                    
                                     onChange={(event) => setEmail(event.target.value)}
                                 />
                                 
