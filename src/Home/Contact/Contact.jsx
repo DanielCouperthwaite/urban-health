@@ -26,17 +26,21 @@ export default function Contact () {
 
     function handleSubmit(event) {
         event.preventDefault();
-        fetch("/contact", {
+        console.log("inside handle submit", name, email, message)
+        fetch("/", {
+            
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", name, email, message }),
         })
             .then(() => {
+                console.log("after fetch", name, email, message)
                 setEmail("")
                 setMessage("")
                 setName("")
             })
             .then(() => {
+                console.log("before alert", name, email, message)
                 alert("Message Sent!")
             })
             .catch((error) => alert(error));
