@@ -92,8 +92,6 @@ export default function Contact () {
 
 
                         <form
-                            data-netlify="true"
-                            // action="https://formsubmit.co/danielcoup1@outlook.com"
                             name="contact"
                             onSubmit={handleSubmit}
                         >
