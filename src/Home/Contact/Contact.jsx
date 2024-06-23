@@ -136,7 +136,7 @@ export default function Contact () {
                                 />
                                 
                             </div>
-                            {submitted === false ? <button type="submit">Submit</button> : <p>Sending message in progress, please do not refresh the page!</p>}
+                            {submitted === false ? <button type="submit">Submit</button> : <p>Sending message... This can take up to 30 seconds. Please do not refresh the page!</p>}
                         </form>
 
 
