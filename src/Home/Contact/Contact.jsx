@@ -12,7 +12,7 @@ export default function Contact () {
     const [loadOne, setLoadOne] =useState(false)
     const [loadTwo, setLoadTwo] =useState(false)
 
-    
+    const [submitted, setSubmitted] = useState(false);
 
     // function encode(data) {
     //     return Object.keys(data)
@@ -31,8 +31,8 @@ export default function Contact () {
             const [name, setName] = useState('');
             const [email, setEmail] = useState('');
             const [message, setMessage] = useState('');
-            const [submitted, setSubmitted] = useState(false);
             
+
             fetch("https://formsubmit.co/ajax/danielcoup1@outlook.com", {
                 method: "POST",
                 headers: {
