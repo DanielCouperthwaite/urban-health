@@ -15,6 +15,7 @@ export default function Contact () {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+    const [submitted, setSubmitted] = useState(false);
 
     // function encode(data) {
     //     return Object.keys(data)
@@ -26,8 +27,7 @@ export default function Contact () {
 
     function handleSubmit(event) {
         event.preventDefault();
-
-        alert("Please wait... Submission can take up to ten seconds...")
+        setSubmitted(true);
     
         fetch("https://formsubmit.co/ajax/danielcoup1@outlook.com", {
           method: "POST",
@@ -48,11 +48,12 @@ export default function Contact () {
             setEmail("")
             setMessage("")
             setName("")
+            setSubmitted(false)
           })
           .then(() => {
             alert("Message Sent!")
           })
-          .catch((error) => alert(error));
+          .catch((error) => alert("Unfortunately, there was a problem with your submission. Please try again!"));
     
     
       }
@@ -135,7 +136,7 @@ export default function Contact () {
                                 />
                                 
                             </div>
-                            <button type="submit">Submit</button>
+                            {submitted === false ? <button type="submit">Submit</button> : <p>Sending message in progress, please do not refresh the page!</p>}
                         </form>
 
 
