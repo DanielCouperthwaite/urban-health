@@ -12,10 +12,7 @@ export default function Contact () {
     const [loadOne, setLoadOne] =useState(false)
     const [loadTwo, setLoadTwo] =useState(false)
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [submitted, setSubmitted] = useState(false);
+    
 
     // function encode(data) {
     //     return Object.keys(data)
@@ -26,84 +23,96 @@ export default function Contact () {
     // }
 
     function Form() {
-        <form
-            name="contact"
-            onSubmit={handleSubmit}
-        >
-            <h2 >Contact</h2>
-            <div>
-                <label htmlFor="name">Name</label>
-                <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={name}
 
-                    onChange={(event) => setName(event.target.value)}
-                />
+        function handleSubmit(event) {
+            event.preventDefault();
+            setSubmitted(true);
 
-            </div>
-            <div >
-                <label htmlFor="email">
-                    Email</label>
+            fetch("https://formsubmit.co/ajax/danielcoup1@outlook.com", {
+                method: "POST",
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: name,
+                    message: message,
+                    email: email
 
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={email}
+                })
+            })
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .then(() => {
+                    setEmail("")
+                    setMessage("")
+                    setName("")
+                    setSubmitted(false)
+                })
+                .then(() => {
+                    alert("Message Sent!")
+                })
+                .catch((error) => alert("Unfortunately, there was a problem with your submission. Please try again!"));
 
-                    onChange={(event) => setEmail(event.target.value)}
-                />
 
-            </div>
-            <div>
-                <label htmlFor="message">
-                    Message</label>
-                <textarea
-                    id="message"
-                    name="message"
-                    value={message}
-                    onChange={(event) => setMessage(event.target.value)}
-                />
+        }
 
-            </div>
-            {submitted === false ? <button type="submit">Submit</button> : <p>Message sent! Thanks for getting in touch, we will reply as soon as we can.</p>}
-        </form>
+        const [name, setName] = useState('');
+        const [email, setEmail] = useState('');
+        const [message, setMessage] = useState('');
+        const [submitted, setSubmitted] = useState(false);
+
+        return (
+            <>
+                <form
+                    name="contact"
+                    onSubmit={handleSubmit}
+                >
+                    <h2 >Contact</h2>
+                    <div>
+                        <label htmlFor="name">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            value={name}
+
+                            onChange={(event) => setName(event.target.value)}
+                        />
+
+                    </div>
+                    <div >
+                        <label htmlFor="email">
+                            Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            value={email}
+
+                            onChange={(event) => setEmail(event.target.value)}
+                        />
+
+                    </div>
+                    <div>
+                        <label htmlFor="message">
+                            Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            value={message}
+                            onChange={(event) => setMessage(event.target.value)}
+                        />
+
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </>
+        )
     }
 
-    function handleSubmit(event) {
-        event.preventDefault();
-        setSubmitted(true);
     
-        fetch("https://formsubmit.co/ajax/danielcoup1@outlook.com", {
-          method: "POST",
-          headers: {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
-          },
-          body: JSON.stringify({
-            name: name,
-            message: message,
-            email: email
-    
-          })
-        })
-          .then(response => response.json())
-          .then(data => console.log(data))
-          .then(() => {
-            setEmail("")
-            setMessage("")
-            setName("")
-            setSubmitted(false)
-          })
-          .then(() => {
-            alert("Message Sent!")
-          })
-          .catch((error) => alert("Unfortunately, there was a problem with your submission. Please try again!"));
-    
-    
-      }
 
 
     useEffect(() => {
