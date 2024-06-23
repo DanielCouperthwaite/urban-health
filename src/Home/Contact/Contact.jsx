@@ -26,6 +26,8 @@ export default function Contact () {
 
     function handleSubmit(event) {
         event.preventDefault();
+
+        alert("Please wait... Submission can take up to ten seconds...")
     
         fetch("https://formsubmit.co/ajax/danielcoup1@outlook.com", {
           method: "POST",
