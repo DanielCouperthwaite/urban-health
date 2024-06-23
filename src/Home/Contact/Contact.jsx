@@ -25,6 +25,53 @@ export default function Contact () {
     //         .join("&");
     // }
 
+    function Form() {
+        <form
+            name="contact"
+            onSubmit={handleSubmit}
+        >
+            <h2 >Contact</h2>
+            <div>
+                <label htmlFor="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={name}
+
+                    onChange={(event) => setName(event.target.value)}
+                />
+
+            </div>
+            <div >
+                <label htmlFor="email">
+                    Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={email}
+
+                    onChange={(event) => setEmail(event.target.value)}
+                />
+
+            </div>
+            <div>
+                <label htmlFor="message">
+                    Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    value={message}
+                    onChange={(event) => setMessage(event.target.value)}
+                />
+
+            </div>
+            {submitted === false ? <button type="submit">Submit</button> : <p>Message sent! Thanks for getting in touch, we will reply as soon as we can.</p>}
+        </form>
+    }
+
     function handleSubmit(event) {
         event.preventDefault();
         setSubmitted(true);
@@ -94,50 +141,7 @@ export default function Contact () {
                     <div className="about">
 
 
-                        <form
-                            name="contact"
-                            onSubmit={handleSubmit}
-                        >
-                            <h2 >Contact</h2>
-                            <div>
-                                <label htmlFor="name">Name</label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    value={name}
-                                    
-                                    onChange={(event) => setName(event.target.value)}
-                                />
-                                
-                            </div>
-                            <div >
-                                <label htmlFor="email">
-                                    Email</label>
-                                
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    value={email}
-                                    
-                                    onChange={(event) => setEmail(event.target.value)}
-                                />
-                                
-                            </div>
-                            <div>
-                                <label htmlFor="message">
-                                    Message</label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    value={message}
-                                    onChange={(event) => setMessage(event.target.value)}
-                                />
-                                
-                            </div>
-                            {submitted === false ? <button type="submit">Submit</button> : <p>Sending message... This can take up to 30 seconds. Please do not refresh the page!</p>}
-                        </form>
+                    {submitted === false ? <Form /> : <p>Message sent! Thanks for getting in touch, we will reply as soon as we can.</p>}
 
 
 
