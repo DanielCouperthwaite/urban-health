@@ -23,11 +23,16 @@ export default function Contact () {
     // }
 
     function Form() {
-
+        
         function handleSubmit(event) {
             event.preventDefault();
             setSubmitted(true);
-
+            
+            const [name, setName] = useState('');
+            const [email, setEmail] = useState('');
+            const [message, setMessage] = useState('');
+            const [submitted, setSubmitted] = useState(false);
+            
             fetch("https://formsubmit.co/ajax/danielcoup1@outlook.com", {
                 method: "POST",
                 headers: {
@@ -57,10 +62,6 @@ export default function Contact () {
 
         }
 
-        const [name, setName] = useState('');
-        const [email, setEmail] = useState('');
-        const [message, setMessage] = useState('');
-        const [submitted, setSubmitted] = useState(false);
 
         return (
             <>
