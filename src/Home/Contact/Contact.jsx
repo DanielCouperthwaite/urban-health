@@ -16,35 +16,44 @@ export default function Contact () {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    function encode(data) {
-        return Object.keys(data)
-            .map(
-                (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-            )
-            .join("&");
-    }
+    // function encode(data) {
+    //     return Object.keys(data)
+    //         .map(
+    //             (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+    //         )
+    //         .join("&");
+    // }
 
     function handleSubmit(event) {
         event.preventDefault();
-        console.log("inside handle submit", name, email, message)
-        fetch("/", {
-            
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", name, email, message }),
+    
+        fetch("https://formsubmit.co/ajax/danielcoup1@outlook.com", {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name,
+            message: message,
+            email: email
+    
+          })
         })
-            .then(() => {
-                console.log("after fetch", name, email, message)
-                setEmail("")
-                setMessage("")
-                setName("")
-            })
-            .then(() => {
-                console.log("before alert", name, email, message)
-                alert("Message Sent!")
-            })
-            .catch((error) => alert(error));
-    }
+          .then(response => response.json())
+          .then(data => console.log(data))
+          .then(() => {
+            setEmail("")
+            setMessage("")
+            setName("")
+          })
+          .then(() => {
+            alert("Message Sent!")
+          })
+          .catch((error) => alert(error));
+    
+    
+      }
 
 
     useEffect(() => {
@@ -83,8 +92,8 @@ export default function Contact () {
 
 
                         <form
-                            
-                            action="https://formsubmit.co/danielcoup1@outlook.com"
+                            data-netlify="true"
+                            // action="https://formsubmit.co/danielcoup1@outlook.com"
                             name="contact"
                             onSubmit={handleSubmit}
                         >
