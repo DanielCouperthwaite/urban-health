@@ -45,7 +45,7 @@ export default function Home ({projects, bg, setBg}) {
             
             <body style={{backgroundImage: "url(" + bg+")"}}>
 
-                <div>
+                <div style={{margin: "0 auto"}}>
                    <Box>
                         <Grow in={aboutLoad}>
                             <div className='home-info'>
@@ -53,6 +53,11 @@ export default function Home ({projects, bg, setBg}) {
                         
                         
                                         <div className='social-holder'>
+                                            {/* <a  href="https://www.facebook.com/share/JNqew8PHdicTvR1N/?mibextid=LQQJ4d" target='_blank'>
+                                                <button style={{fontSize:"27px"}} className='left-social-link'>
+                                                Donate
+                                                </button>
+                                            </a> */}
                                             <a  href="https://www.facebook.com/share/JNqew8PHdicTvR1N/?mibextid=LQQJ4d" target='_blank'>
                                                 <button className="social-link">
                                                     <img src={fb} alt="Facebook logo" style={{width: "60%", height: "auto"}}></img>
@@ -74,7 +79,7 @@ export default function Home ({projects, bg, setBg}) {
                                 
                                        <div style={{marginTop: "30px", marginBottom: "30px", marginLeft: "0", marginRight: "0"}}>
                                             <img className="logo" src={logoCircle}></img>
-                                            {/* <p>Full Stack Developer</p> */}
+                                            {/* <p>Potential Slogan</p> */}
                                        </div>    
                                 </div> 
                             </div>

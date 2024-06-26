@@ -83,6 +83,20 @@ p {
 
 }
 
+.left-social-link {
+    background-color: aliceblue;
+    color: black;
+    font-size: 7px;
+    width: 100%;
+    padding: 6px;
+    max-width: 120px;
+    min-width: 120px;
+    margin-right: 10px;
+    border: solid white;
+    height: 46px;
+
+}
+
 .social-link {
     background-color: aliceblue;
     color: black;
