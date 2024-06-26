@@ -16,15 +16,8 @@ export default function Contact () {
     const [loadOne, setLoadOne] =useState(false)
     const [loadTwo, setLoadTwo] =useState(false)
 
-    const [submitted, setSubmitted] = useState(false);
-
-    // function encode(data) {
-    //     return Object.keys(data)
-    //         .map(
-    //             (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-    //         )
-    //         .join("&");
-    // }
+    const [submitted, setSubmitted] = useState(false);  
+    const [validated, setValidated] = useState(false);
 
     function Form() {
 
@@ -34,8 +27,19 @@ export default function Contact () {
         
         function handleSubmit(event) {
             event.preventDefault();
+
+            if( name.length > 0
+                && message.length > 0
+                && email.length > 0
+                && email.split('').includes('@')
+                && email.split('').includes('.')){
+                    setValidated(true)
+                } else setValidated(false)
+            
+                
             setSubmitted(true);
             
+            if(validated === true){
 
             fetch("https://formsubmit.co/ajax/urbanhealthuk@hotmail.com", {
                 method: "POST",
@@ -62,7 +66,7 @@ export default function Contact () {
                 //     alert("Message Sent!")
                 // })
                 .catch((error) => alert("Unfortunately, there was a problem with your submission. Please try again!"));
-
+        }
 
         }
 
@@ -75,7 +79,7 @@ export default function Contact () {
                 >
                     
                     <div>
-                        <label htmlFor="name">Name</label>
+                        <label htmlFor="name">Name*</label>
                         <input
                             type="text"
                             id="name"
@@ -88,7 +92,7 @@ export default function Contact () {
                     
                     <div>
                         <label htmlFor="email">
-                            Email</label>
+                            Email*</label>
 
                             <input
                             type="email"
@@ -102,7 +106,7 @@ export default function Contact () {
                     </div>
                     <div>
                         <label htmlFor="message">
-                            Message</label>
+                            Message*</label>
                         <textarea
                             id="message"
                             name="message"
@@ -111,6 +115,7 @@ export default function Contact () {
                         />
 
                     </div>
+                    {validated === false && submitted === true ? <p style={{color: "red", textAlign: "center"}}>Please fill in all fields</p> : null}
                     <button className='submit' type="submit">Submit</button>
                 </form>
             </>
@@ -175,29 +180,9 @@ export default function Contact () {
                     <div className="about">
 
 
-                    {submitted === false ? <Form /> : <div className='submitted'><p>Thanks for getting in touch!<br /><br /> We will reply as soon as we can.</p></div>}
+                    {submitted === false || validated === false ? <Form /> : <div className='submitted'><p>Thanks for getting in touch!<br /><br /> We will reply as soon as we can.</p></div>}
 
 
-
-                        {/* <div>
-                            <div style={{textAlign: "center", marginBottom: "80px"}}>
-                                        <Link target="blank" to="https://emea01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fform.jotform.com%2F241347125439052&data=05%7C02%7C%7C2e6fbbd2d57342fee1fe08dc8bbcc227%7C84df9e7fe9f640afb435aaaaaaaaaaaa%7C1%7C0%7C638538890033979462%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=hfgNwuPjpt9ODcEcLUFTDorikzqgQnoIvugrdoDSROE%3D&reserved=0">
-                                            <button style={{width: "500px"}}>
-                                                <p style={{fontSize: "1.5rem"}} className='button-text'>Referral Form</p>
-                                            </button>   
-                                        </Link>
-                            </div>
-                        </div> */}
-                        {/* <div className='tech-info'>
-                            <p className='tech-span'><strong>Email: </strong></p>
-                            <p className='tech-p'>example@email.com</p>
-                            <p className='tech-span'><strong>Phone:</strong></p>
-                            <p className='tech-p'>0123456789</p>
-                            <p className='tech-span'><strong>Donations:</strong></p>
-                            <p className='tech-p'>www.donations-example.com</p>
-                            <p className='tech-span'><strong>Find us on:</strong></p>
-                            <p className='tech-p'>Social Media Links Here</p>
-                        </div> */}
                         
                         <div>
                             <div style={{textAlign: "center"}}>
