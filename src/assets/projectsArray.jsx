@@ -1,10 +1,21 @@
 import footy1 from "./footy1.jpg"
+import footy2 from "./footy2.jpg"
+import footy3 from "./footy3.jpg"
+import footy4 from "./footy4.jpg"
+
+import bowls1 from "./bowls1.jpg"
+import bowls2 from "./bowls2.jpg"
+import bowls3 from "./bowls3.jpg"
+import bowls4 from "./bowls4.jpg"
+import bowls5 from "./bowls5.jpg"
+import bowls6 from "./bowls6.jpg"
+
 
 
 export const projectsArray = [
     {
         name: "The Footy Social", 
-        images: [footy1],
+        images: [footy1, footy2, footy3, footy4],
         thumbnail: footy1,
         descr1: "The Footy Social was created to help men (18+) improve their mental and physical health by hosting free weekly football sessions. No membership is required, we encourage men of all ages to get involved. The Footy Social is now held in three areas, Sefton, North Liverpool, and South Liverpool.",
         descr2: "Whether you wish to play, or call in for a drink, everyone is welcome. The project is designed to provide social support networks, that for some can help reduce feelings of isolation, boost self-confidence and self-worth; and provide a distraction from rumination and negative thoughts.",
@@ -12,7 +23,7 @@ export const projectsArray = [
         descr4: "We aim to launch more ‘footy socials’ across the city soon so stay tuned If you would like to get involved in the Footy social, please complete a referral form and one of our team will be in touch.",
         bullets: [],
         descr5: "",
-        link: "https://www.dogstrust.org.uk/",
+        link: "",
         link2: "",
         link3: "",
         link4: "",
@@ -21,7 +32,7 @@ export const projectsArray = [
     {
         name: "Community Allotment", 
         images: [footy1],
-        thumbnail: footy1,
+        thumbnail: bowls1,
         descr1: "Launched Spring 2024 our community allotment is held every Sunday between 1pm-3pm in Walton Hall Park. We encourage everyone of all ages to get involved in this newly formed group which has exciting plans for the future.",
         descr2: "The community allotment will provide outdoor learning experiences for various groups ensuring that the allotment is inclusive to all while enhancing individuals’ personal growth and well-being by participating in a variety of projects.",
         descr3: "The allotment is particularly beneficial for individuals who are at risk of social isolation; helping bring together local communities and provide opportunities to learn and develop new skills. Whilst offering a variety of projects, we can also provide specialist staff who are able to help risk assess participants performance skills drawing on their strengths and limitations to ensure sessions are adapted to an individual’s needs.",
@@ -52,15 +63,15 @@ export const projectsArray = [
     },
     {
         name: "Bowls for All", 
-        images: [footy1],
-        thumbnail: footy1,
+        images: [bowls1, bowls2, bowls3, bowls4, bowls5, bowls6],
+        thumbnail: bowls2,
         descr1: "Bowling is one of the many activities that promotes hand-eye coordination, proprioception and strengthens the vestibular system which supports balance and spatial awareness.",
         descr2: "Bowling offers tremendous benefits for people of all ages, cultural backgrounds and creed as it can bring people together who may be playing the sport for the first time.",
         descr3: "It creates an avenue for people to learn new skills and form new connections which is a vital tool for integration and being part of the community. We encourage people of all ages and abilities to get involved, an expert coach will be at hand to teach you the basics and all equipment will be provided.",
         descr4: "If you are interested in one of our bowls for all courses or you have some knowledge of the game and are just looking for a place to play then please don’t hesitate to get in touch.",
         bullets: [],
         descr5: "",
-        link: "https://www.dogstrust.org.uk/",
+        link: "",
         link2: "",
         link3: "",
         link4: "",

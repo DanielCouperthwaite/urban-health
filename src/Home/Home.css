@@ -97,7 +97,7 @@ p {
 
 .homeImage {
     width: 80%;
-    height: auto;
+    height: 280px;
     min-width: 80px;
     overflow:hidden;
     max-height: 280px;

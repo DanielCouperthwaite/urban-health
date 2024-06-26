@@ -3,7 +3,6 @@ import './Donate.css'
 import { Link } from 'react-router-dom'
 import { Box, Grow } from '@mui/material'
 
-import paypalLogo from "../../assets/paypal-logo.jpg"
 import ParticleEffectAbout from '../About/ParticleEffectAbout'
 
 

@@ -57,7 +57,7 @@ export default function About ({bg, setBg}) {
                                 </div>
                                 <div style={{width: "33%"}}>
                                     <img className='face' src={aboutData.images[1]} alt=""/>
-                                    <p className='name'>Christine Maxwell</p>
+                                    <p className='name'>Chelsea Maxwell</p>
                                     <p className='dir-descr'>Mental Health Nurse</p>
                                 </div>
                                 <div style={{width: "33%"}}>

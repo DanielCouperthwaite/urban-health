@@ -7,7 +7,6 @@ import DH from "./DH.jpg"
 export const aboutData = 
     {
         title: "About", 
-        // lang: "Javascript, React",
         images: [DH, CM, MO],
         descr: "At Urban Health UK our aim is to improve lives by making a positive difference to health and wellbeing across the five metropolitan boroughs of Merseyside: Liverpool, Knowsley, St Helens, Sefton, and Wirral.",
         descr1p5: "Our team consists of health professionals across the NHS with a passion to help others.",
