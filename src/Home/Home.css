@@ -67,10 +67,10 @@ p {
 
 .project-button {
     width: 75%;
-    max-width: 450px;
+    max-width: 465px;
     margin: 25px;
     color: white;
-    border: "1px solid white";
+    border: 1px solid white;
     max-height: 400px;
     object-fit: cover;
     overflow:hidden;
@@ -146,6 +146,19 @@ p {
     body {
       background-size: 100rem;
 
+    }
+  }
+
+  @media only screen and (min-width: 1600px) {
+    .project-button {
+        max-width: 580px;
+        max-height: 1000px;
+    }
+
+    .homeImage {
+        width: 80%;
+        height: auto;
+        max-height: 335px;
     }
   }
 
