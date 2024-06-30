@@ -43,6 +43,16 @@ p {
     opacity: 1;
 }
 
+.options-referral {
+    flex: 1;
+    width: 70%;
+    height: 100%;
+    text-align: center;
+    height: 90px;
+    border-radius: 15px;
+    opacity: 1;
+}
+
 .home-button {
     color: rgb(255, 255, 255);
     opacity: 0.95;
@@ -146,6 +156,12 @@ p {
     body {
       background-size: 100rem;
 
+    }
+  }
+
+@media only screen and (max-width: 700px) {
+    .options-referral{
+        display: none;
     }
   }
 

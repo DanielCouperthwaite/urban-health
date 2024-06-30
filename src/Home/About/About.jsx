@@ -44,7 +44,7 @@ export default function About ({bg, setBg}) {
                         <h3 style={{marginTop: "-20px"}}>{aboutData.title}</h3>
                         <p>{aboutData.descr}</p>
                         <p>{aboutData.descr1p5}</p>
-                        <h2>***nice image here***</h2>
+                        
                         <div>
                             <h2>Meet the Directors</h2>
                             <div style={{display: "flex", textAlign: "center"}}>
@@ -79,7 +79,7 @@ export default function About ({bg, setBg}) {
                         <p>{aboutData.descr4}</p>
                         <p>{aboutData.descr5}</p>
                     
-                        <h2>**ADD REFERRAL LINK**</h2>
+                        
                         <div>
                             <div style={{textAlign: "center"}}>
                                         <Link to="/">

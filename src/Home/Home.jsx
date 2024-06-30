@@ -109,14 +109,14 @@ export default function Home ({projects, bg, setBg}) {
                                 
                         </div>
 
-                        {/* <div className="options">
-                                        <Link to="/contact">
+                        <div className="options-referral">
+                                        <Link target="_blank" to="https://form.jotform.com/241347125439052">
                                             <button style={{borderRadius: "0px", borderLeft: "0px"}} className='home-button'>
-                                                <h2>Referral</h2>
+                                                <h2>Referral Form</h2>
                                             </button>   
                                         </Link>
                                 
-                        </div> */}
+                        </div>
 
                         <div className="options">
                                         <Link target="_blank" to="https://www.paypal.com/donate/?hosted_button_id=YHVX9U6QGKYPN">
