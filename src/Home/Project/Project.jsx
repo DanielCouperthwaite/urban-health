@@ -53,7 +53,7 @@ export default function Project ({projects}) {
                 <Grow in={loadOne}>
         
             <div className='project-page'>
-                <div className='social-holder' style={{marginRight: "10px"}}>
+                <div className='social-holder-project' style={{marginRight: "10px"}}>
                     
                         <Link to="/">
                             <button className='back-button'>                        
