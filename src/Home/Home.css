@@ -83,6 +83,7 @@ p {
     height: 100%;
     border: solid white;
     vertical-align: middle;
+    border-radius: 0;
     /* margin:auto; */
 }
 
