@@ -13,6 +13,7 @@ import bg1 from "../assets/bg1.png"
 import fb from "../assets/facebook-logo.png"
 import ig from "../assets/instagram-logo.png"
 import tw from "../assets/twitter-logo.png"
+import twx from "../assets/x-logo.png"
 
 import background from "../assets/bg.jpg"
 
@@ -70,7 +71,7 @@ export default function Home ({projects, bg, setBg}) {
                                             </a>
                                             <a href="https://twitter.com/UrbanHealthUK24" target='_blank'>
                                                 <button className="social-link">
-                                                    <img src={tw} alt="Twitter Logo" style={{width: "60%", height: "auto"}}></img>
+                                                    <img src={twx} alt="Twitter Logo" style={{width: "60%", height: "auto"}}></img>
                                                 </button>
                                             </a>
                                         </div>    
