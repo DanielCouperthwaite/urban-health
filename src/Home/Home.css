@@ -125,7 +125,7 @@ p {
     padding: 6px;
     max-width: 120px;
     min-width: 120px;
-    margin-right: 8px;
+    margin: 8px;
     border: solid rgb(255, 255, 255);
     height: 46px;
 
@@ -204,14 +204,11 @@ p {
 
   }
 
-
-  @media only screen and (min-width: 720px) {
-    .left-social-link{
-        display: none;
-    }
+  @media only screen and (max-width: 430px) {
+    .social-holder{
+        justify-content: center;
+    }    
   }
-
-  
 
   @media only screen and (min-width: 1600px) {
     .project-button {
@@ -231,8 +228,11 @@ p {
     }
   }
 
-/* @media only screen and (min-width: 1700px) {
-    body {
-      background-size: 100%;
+  @media only screen and (min-width: 720px) {
+    .left-social-link{
+        display: none;
+    }
   }
-} */
+
+  
+
