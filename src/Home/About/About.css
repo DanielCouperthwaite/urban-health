@@ -17,6 +17,11 @@
     min-width: 200px;
 }
 
+.social-holder-about {
+    display: flex;
+    justify-content: flex-end;
+}
+
 h3 {
     text-align: center;
 }
