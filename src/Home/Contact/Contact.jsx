@@ -143,13 +143,13 @@ export default function Contact () {
                 <Grow in={loadOne}>
                     <div className="about">
                     
-                                        <div className='social-holder' style={{marginRight: "10px"}}>
-                                        <Link to="/">
-                                            
-                                                <p>{"x"}</p>
-                                            
-                                        </Link>
-                                        </div>  
+                        <div className='social-holder' style={{ marginRight: "10px" }}>
+                            <Link to="/">
+                                <button className='back-button'>
+                                    <p className='back-button-text' >{" < "}</p>
+                                </button>
+                            </Link>
+                        </div>  
                     
                         
                         <h3 style={{marginTop: "-20px"}}>Get in Touch!</h3>
