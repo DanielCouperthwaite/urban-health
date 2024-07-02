@@ -53,11 +53,11 @@ export default function Home ({projects, bg, setBg}) {
                         
                         
                                         <div className='social-holder'>
-                                            {/* <a  href="https://www.facebook.com/share/JNqew8PHdicTvR1N/?mibextid=LQQJ4d" target='_blank'>
+                                            <a  href="https://www.paypal.com/donate/?hosted_button_id=YHVX9U6QGKYPN" target='_blank'>
                                                 <button style={{fontSize:"27px"}} className='left-social-link'>
                                                 Donate
                                                 </button>
-                                            </a> */}
+                                            </a>
                                             <a  href="https://www.facebook.com/share/JNqew8PHdicTvR1N/?mibextid=LQQJ4d" target='_blank'>
                                                 <button className="social-link">
                                                     <img src={fb} alt="Facebook logo" style={{width: "60%", height: "auto"}}></img>
@@ -111,14 +111,14 @@ export default function Home ({projects, bg, setBg}) {
 
                         <div className="options-referral">
                                         <Link target="_blank" to="https://form.jotform.com/241347125439052">
-                                            <button style={{borderRadius: "0px", borderLeft: "0px"}} className='home-button'>
-                                                <h2>Referral Form</h2>
+                                            <button style={{borderLeft: "0px"}} className='home-button-referral'>
+                                                <h2>Referral <span className='form-link-word'>Form</span></h2>
                                             </button>   
                                         </Link>
                                 
                         </div>
 
-                        <div className="options">
+                        <div className="options-donate">
                                         <Link target="_blank" to="https://www.paypal.com/donate/?hosted_button_id=YHVX9U6QGKYPN">
                                             <button style={{borderTopLeftRadius: "0px", borderBottomLeftRadius: "0px", borderLeft: "5px"}} className='home-button'>
                                                 <h2>Donate</h2>
