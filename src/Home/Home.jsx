@@ -54,7 +54,7 @@ export default function Home ({projects, bg, setBg}) {
                         
                                         <div className='social-holder'>
                                             <a  href="https://www.paypal.com/donate/?hosted_button_id=YHVX9U6QGKYPN" target='_blank'>
-                                                <button style={{fontSize:"27px"}} className='left-social-link'>
+                                                <button style={{fontSize:"26px"}} className='left-social-link'>
                                                 Donate
                                                 </button>
                                             </a>
