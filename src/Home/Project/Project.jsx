@@ -13,7 +13,7 @@ export default function Project ({projects}) {
     const {chosenProject}  = useParams()
     const currentProject = projects.filter((project) => project.name === chosenProject)
 
-    const {name, descr1, descr11, descr2, descr3Bold, descr3, descr4Bold, descr4, bullets, descr5Bold, descr5, link, linkDescr, github, link2, link2Descr, link3, link3Descr, link4, link4Descr, images} = currentProject[0]
+    const {name, descr1, descr11, descr2, descr3Bold, descr3, descr4Bold, descr4, bullets, descr5Bold, descr5, descr6, descr7, descr8, descr9, descr10, descr12, link, linkDescr, github, link2, link2Descr, link3, link3Descr, link4, link4Descr, images} = currentProject[0]
 
 
     const [loadOne, setLoadOne] = useState(false)
@@ -127,8 +127,16 @@ export default function Project ({projects}) {
                             <div className='project-info'>
                                 {descr3 === "" ? null : <p>{descr3}</p>}
                                 {descr4 === "" ? null : <p>{descr4}</p>}
-                                {bullets.length < 0 ? null : <ul>{bullets.map(bulletItem => {return <li>{bulletItem}</li>})}</ul>}
+                                {bullets.length === 0 ? null : <ul>{bullets.map(bulletItem => {return <li>{bulletItem}</li>})}</ul>}
                                 {descr5 === "" ? null : <p>{descr5}</p>}
+                                {descr6 === "" ? null : <p>{descr6}</p>}
+                                {descr7 === "" ? null : <p>{descr7}</p>}
+                                {descr8 === "" ? null : <p>{descr8}</p>}
+                                {descr9 === "" ? null : <p>{descr9}</p>}
+                                {descr10 === "" ? null : <p>{descr10}</p>}
+                                {descr11 === "" ? null : <p>{descr11}</p>}
+                                {descr12 === "" ? null : <p>{descr12}</p>}
+
                                 
                             </div>
                                 {link4 === "" ? null : <a href={link4} target="blank"><button className='project-links'>{link4Descr}</button> </a>}
