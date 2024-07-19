@@ -127,7 +127,7 @@ export default function Project ({projects}) {
                             <div className='project-info'>
                                 {descr3 === "" ? null : <p>{descr3}</p>}
                                 {descr4 === "" ? null : <p>{descr4}</p>}
-                                {bullets.length === 0 ? null : <ul>{bullets.map(bulletItem => {return <li>{bulletItem}</li>})}</ul>}
+                                {bullets.length == 0 ? null : <ul>{bullets.map(bulletItem => {return <li>{bulletItem}</li>})}</ul>}
                                 {descr5 === "" ? null : <p>{descr5}</p>}
                                 {descr6 === "" ? null : <p>{descr6}</p>}
                                 {descr7 === "" ? null : <p>{descr7}</p>}

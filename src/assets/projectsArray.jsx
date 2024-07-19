@@ -56,7 +56,7 @@ export const projectsArray = [
         descr3: "The allotment is particularly beneficial for individuals who are at risk of social isolation; helping bring together local communities and provide opportunities to learn and develop new skills. Whilst offering a variety of projects, we can also provide specialist staff who are able to help risk assess participants performance skills drawing on their strengths and limitations to ensure sessions are adapted to an individual’s needs.",
         descr4: "Whether you wish to volunteer or sign up to one of our community allotment projects there are so many therapeutic benefits to gardening such as:",
         descr5: "",
-        bullets2: ["Enable calmness or grounding skills", "Help regulates breathing", "Rewarding/satisfaction/achievement", "Improves dexterity.", "Promotes socialisation.", "Support teamwork / collaboration", "Provides structure / balanced routine.", "Identity or sense of belonging"],
+        bullets: ["Enable calmness or grounding skills", "Help regulates breathing", "Rewarding/satisfaction/achievement", "Improves dexterity.", "Promotes socialisation.", "Support teamwork / collaboration", "Provides structure / balanced routine.", "Identity or sense of belonging"],
         link: "https://form.jotform.com/241347125439052",
         link2: "",
         link3: "",
