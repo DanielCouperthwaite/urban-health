@@ -181,7 +181,9 @@ export default function Contact () {
                     <div className="about">
 
 
-                    {submitted === false || validated === false ? <Form /> : <div className='submitted'><p>Thanks for getting in touch!<br /><br /> We will reply as soon as we can.</p></div>}
+                    {/* {submitted === false || validated === false ?  */}
+                        <Form /> 
+                        {/* : <div className='submitted'><p>Thanks for getting in touch!<br /><br /> We will reply as soon as we can.</p></div>} */}
 
 
                         
