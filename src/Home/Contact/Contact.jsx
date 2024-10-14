@@ -186,10 +186,10 @@ export default function Contact () {
 
 
                     {/* {submitted === false || validated === false ?  */}
-                        <Form /> 
+                        {/* <Form />  */}
                         {/* : <div className='submitted'><p>Thanks for getting in touch!<br /><br /> We will reply as soon as we can.</p></div>} */}
 
-
+                        <div className='submitted'><p>Form Submission Under Maintenance<br /><br /> Please email urbanhealthuk@hotmail.com</p></div>
                         
                         <div>
                             <div style={{textAlign: "center"}}>
