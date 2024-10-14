@@ -40,8 +40,9 @@ export default function Contact () {
             setSubmitted(true);
             
             if(validated === true){
-
-            fetch("https://formsubmit.co/ajax/urbanhealthuk@hotmail.com", {
+            
+            fetch("https://formsubmit.co/ajax/danielcoup1@outlook.com", {
+            // fetch("https://formsubmit.co/ajax/urbanhealthuk@hotmail.com", {
                 method: "POST",
                 headers: {
                     'Content-Type': 'application/json',
