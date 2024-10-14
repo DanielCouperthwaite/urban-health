@@ -37,7 +37,7 @@ export default function Contact () {
                 } else setValidated(false)
             
                 
-            // setSubmitted(true);
+            setSubmitted(true);
             
             if(validated === true){
             
