@@ -55,17 +55,17 @@ export default function Contact () {
 
                 })
             })
-                // .then(response => response.json())
-                // .then(data => console.log(data))
-                // .then(() => {
-                //     setEmail("")
-                //     setMessage("")
-                //     setName("")
-                //     setSubmitted(false)
-                // })
-                // .then(() => {
-                //     alert("Message Sent!")
-                // })
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .then(() => {
+                    setEmail("")
+                    setMessage("")
+                    setName("")
+                    setSubmitted(false)
+                })
+                .then(() => {
+                    alert("Message Sent!")
+                })
                 .catch((error) => alert("Unfortunately, there was a problem with your submission. Please try again!"));
         }
 
