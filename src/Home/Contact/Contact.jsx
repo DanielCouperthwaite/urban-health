@@ -28,6 +28,10 @@ export default function Contact () {
         function handleSubmit(event) {
             event.preventDefault();
 
+            console.log(name)
+            console.log(email)
+            console.log(message)
+
             if( name.length > 0
                 && message.length > 0
                 && email.length > 0
